@@ -127,7 +127,7 @@ html {
     border-left: 0.5em solid transparent;
     color: #ed3239;
     left: 43%;
-}
+} 
 
 .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item {
     color: #707070 !important;
@@ -2474,7 +2474,7 @@ main .mainTools ul li .toolSectionData input {
     height: 100%;
     width: 50%;
     position: absolute;
-    background-image: url('../images/carInNature_Brief.png');
+    /* background-image: url('../images/carInNature_Brief.png'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -2514,7 +2514,7 @@ main .mainTools ul li .toolSectionData input {
     height: 100%;
     width: 50%;
     position: absolute;
-    background-image: url('../images/carInForest_Brief.png');
+    /* background-image: url('../images/carInForest_Brief.png'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
