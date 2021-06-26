@@ -1,0 +1,150 @@
+<div class="mainTools">
+    <ul>
+        <li class="d-flex " id="searchField" data-wow-delay="0.6s" data-target="#searchModal">
+            <div class="liSectionItems">
+                <i class="fas fa-search"></i>
+                <div class="toolSectionData d-flex align-items-center">
+                    <input type="text" placeholder="ابحث عن ما تريد">
+                </div>
+            </div>
+        </li>
+        <li class="d-flex " data-wow-delay="0.8s">
+            <div class="liSectionItems">
+                <a href="https://www.facebook.com/MastergasEG" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <div class="toolSectionData d-flex align-items-center">
+                    <a href="https://www.facebook.com/MastergasEG" target="_blank">ماستر جاس</a>
+                </div>
+            </div>
+        </li>
+        <li class="d-flex " id="telephoneField" data-wow-delay="1s" data-target="#telephoneNumberModal">
+            <div class="liSectionItems">
+                <i class="fas fa-phone-alt"></i>
+                <div class="toolSectionData d-flex align-items-center">
+                    <p>+20 104548451</p>
+                </div>
+            </div>
+        </li>
+        <li class="d-flex " id="addressField" data-wow-delay="1.2s" data-target="#addressModal">
+            <div class="liSectionItems">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="toolSectionData d-flex align-items-center">
+                    <p data-toggle="modal" data-target="#addressModalDescrib">شارع النصر, القاهرة, مصر</p>
+                </div>
+            </div>
+        </li>
+        <li class="d-flex " id="calcuField" data-wow-delay="1.4s" data-target="#calculatorSaving">
+            <div class="liSectionItems">
+                <i class="fas fa-calculator"></i>
+                <div class="toolSectionData d-flex align-items-center">
+                    <a data-toggle="modal" data-target="#calculatorSaving">سعر النفط اليوم</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <!-- Modal of search -->
+    <div class="modal fade searchModal" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="bodyContent text-center">
+                        <h2>ابحث عن ما تريد</h2>
+                        <input type="text" placeholder="ابحث عن ما تريد">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal of address -->
+    <div class="modal fade addressModal" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="bodyContent text-center">
+                        <h2>العنوان</h2>
+                        <p data-toggle="modal" data-target="#addressModalDescrib">شارع النصر, القاهرة, مصر</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal of telephoneNumber -->
+    <div class="modal fade telephoneModal" id="telephoneNumberModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="bodyContent text-center">
+                        <h2>اتصل بنا</h2>
+                        <a href="tel:+2056284545">+20 104548451</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal of calculator -->
+    <div class="modal fade calculatorModal" id="calculatorSaving" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="bodyContent">
+                        <div class="headerBody text-center">
+                            <h2>التحويل يكسبك كتير</h2>
+                        </div>
+                        <div class="fuelConsumption d-flex align-items-center justify-content-between">
+                            <h2>استهلاك الوقود باللتر</h2>
+                            <input type="number" id="fuelConsumptionInput" value="0">
+                        </div>
+                        <div class="gasoline92 d-flex align-items-center justify-content-between">
+                            <h2>بنزين 92</h2>
+                            <input type="number" id="gasoline92Input" value="0">
+                        </div>
+                        <div class="naturalGas d-flex align-items-center justify-content-between">
+                            <h2>غاز طبيعي</h2>
+                            <input type="number" id="naturalGasInput" value="0">
+                        </div>
+                        <div class="calcResult d-flex align-items-center">
+                            <div class="calcBtnSec col-12 col-sm-3 d-flex">
+                                <button class="calcBtn col-12 col-sm-11" id="calcBtn">حساب</button>
+                            </div>
+                            <div class="resultSec d-flex align-items-center justify-content-between col-12 col-sm-9">
+                                <div class="saving">
+                                    <h2>التوفير</h2>
+                                </div>
+                                <div class="monthlySavings text-center">
+                                    <h2>الشهرى</h2>
+                                    <input type="text" id="monthlySavingsInput" readonly>
+                                </div>
+                                <div class="annualSavings text-center">
+                                    <h2>السنوى</h2>
+                                    <input type="text" id="annualSavingsInput" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="errorMessageSection">
+                            <p class="errorMessageCalc alert alert-danger" id="errorMessageCalc"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

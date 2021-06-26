@@ -1,0 +1,19 @@
+<div class="InquiriesComplaints">
+    <div class="container">
+        <div class="d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-between">
+            <div data-wow-delay="0.4s" class=" InquiriesComplaintsContent d-flex col-lg-8">
+                <div>
+                    <i class="fas fa-headset"></i>
+                </div>
+                <div class="textContent">
+                    <h2>{{ L.get_msg('inquiriesblk header') }}</h2>
+                    <p>{{ L.get_msg('inquiriesblk content') }}</p>
+                </div>
+            </div>
+            <div data-wow-delay="0.4s" class=" InquiriesComplaintsBtns col-lg-4">
+                <a href="tel://{{ H.getOptions('hotline') }}">{{ L.get_msg('call us') }}</a>
+                <a href="{{ SITEURL }}/index.php?action=contactus">{{ L.get_msg('send email') }}</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+{% extends "base.twig" %}
+{% block content %}
+    <!-- ============== Start pageHeader =============== -->
+    <div class="pageHeader text-center">
+        <div class="container">
+            <h2 data-wow-delay="0.3s" class="wow">{{ H.trans(post.post_title) }}</h2>
+        </div>
+    </div>
+    <!-- ============== End pageHeader =============== -->
+    <!-- ###### allNewsInPage ###### -->
+    <div class="allNewsInPage">
+        <!-- ============== Start newestNews =============== -->
+        <div class="newsDetails">
+            <div class="container">
+            <div class="row">
+                {{ H.trans(post.post_content)|raw }}
+            </div>
+            </div>
+        </div>
+        <!-- ============== End newestNews =============== -->
+    </div>
+    <!-- ============== Start InquiriesComplaints =============== -->
+    {% include 'inquiriesblk.twig' %}
+    <!-- ============== End InquiriesComplaints =============== -->
+{% endblock %}

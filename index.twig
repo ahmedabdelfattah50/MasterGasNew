@@ -1,0 +1,405 @@
+{% extends "base.twig" %}
+{% block content %}
+    <!-- ============== Start Main =============== -->
+    <main>
+        {% include 'toolbox.twig' %}
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div id="carouselId" class="carousel slide col" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        {% for slide in slides %}
+                        <li data-target="#carouselId" data-slide-to="{{ loop.index0 }}" class="{% if loop.index == 1  %}active{% endif %}"></li>
+                        {% endfor %}
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        {% for slide in slides %}
+                            <div class="carousel-item {% if loop.index0 == 0  %}active{% endif %}">
+                                <img src="{{ SITEURL }}{{ slide.meta.post_image.url }}" class="img-fluid" alt="{{ slide.meta.slide_header }}">
+                                <div class="carousel-caption d-none d-md-block" style="top: 50%;">
+                                    <h1 data-wow-delay="0.3s" class="wow fadeInDown">{{ slide.meta.slide_header }}</h1>
+                                    <p data-wow-delay="0.4s" class="wow fadeInDown">{{ slide.meta.slide_subheader }}</p>
+                                </div>
+                            </div>
+                        {% endfor %}
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- ============== End Main =============== -->
+    <!-- ============== Start mainBranches =============== -->
+    <div class="mainBranches">
+        <div class="container">
+            <div class="totalMainBranches row flex-column-reverse flex-lg-row-reverse align-items-center">
+                <div data-wow-delay="1.2s"
+                     class=" branchSection col-11 col-sm-10 col-md-9 col-lg-4 d-flex flex-column align-items-center justify-content-center">
+                    <div class="branchImg">
+                        <img src="images/24horsService.png" alt="">
+                    </div>
+                    <h2>فروع في أنحاء الجمهورية</h2>
+                </div>
+                <div data-wow-delay="0.8s"
+                     class=" branchSection col-11 col-sm-10 col-md-9 col-lg-4 d-flex flex-column align-items-center justify-content-center">
+                    <div class="branchImg">
+                        <img src="images/machinsm.svg" alt="">
+                    </div>
+                    <h2>فروع في أنحاء الجمهورية</h2>
+                </div>
+                <div data-wow-delay="0.4s"
+                     class=" branchSection col-11 col-sm-10 col-md-9 col-lg-4 d-flex flex-column align-items-center justify-content-center">
+                    <div class="branchImg">
+                        <img src="images/fire.png" alt="">
+                    </div>
+                    <h2>فروع في أنحاء الجمهورية</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============== End mainBranches =============== -->
+    <!-- ============== Start sliderAboutCompany =============== -->
+    <div class="sliderAboutCompany d-flex align-items-center" id="sliderAboutCompany">
+        <div class="backCurve"></div>   <!-- this is the div which has background image -->
+        <div class="container">
+            <!-- ########## this is the arrows of slider ########## -->
+            <!--            <div class="paginator-center text-color text-center">
+                            <div class="buttonNextPrev d-flex">
+                                <a href="" class="aboutCompanySliderPrevSlider"><i class="fas fa-angle-right"></i></a>
+                                <a href="" class="aboutCompanySliderNextSlider"><i class="fas fa-angle-left"></i></a>
+                            </div>
+                        </div>-->
+            <div class="aboutCompanySlider">
+                <div class="sliderSection d-flex justify-content-between align-items-center"> <!-- slider Section 1 -->
+                    <div class="sliderData col-md-7 col-lg-6">
+                        <h2>عن الشركة</h2>
+                        <p>هو نص شكلي لا معنى له، يتكون من أحرف متتابعة
+                            بطريقة عشوائية غير مفهومة لغوياً. الغرض الأساسي
+                            منه هو عرض أشكال النصوص وأحجامها وألوانها
+                            دون الاهتمام بالمحتوى</p>
+                        <div class="d-flex justify-content-end col-11">
+                            <a href="briefAboutCompany_AR.html">المزيد</a>
+                        </div>
+                    </div>
+                    <div class="sliderImage">
+                        <img src="images/carAboutCompany.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============== End sliderAboutCompany =============== -->
+    <!-- ============== Start ourServices =============== -->
+    <div class='ourServices'>
+        <div class="container">
+            <h2 class="ourServicesHeader">خدماتنا</h2>
+            <!-- ########## this is the arrows of slider ########## -->
+
+            <!--            <div class="paginator-center text-color text-center">
+                            <div class="buttonNextPrev d-flex">
+                                <a href="" class="ourServicesSliderPrevSlider"><i class="fas fa-angle-right"></i></a>
+                                <a href="" class="ourServicesSliderNextSlider"><i class="fas fa-angle-left"></i></a>
+                            </div>
+                        </div>-->
+            <div class="ourServicesSlider">
+                <div data-wow-delay="0.4s"
+                     class=" fadeInUp ourServicesSection d-flex flex-column align-items-center justify-content-center">
+                    <!-- slider Section 1 -->
+                    <img src="images/oil_1.png" alt="">
+                    <h2>هو نص شكلي لا معنى له</h2>
+                    <p>هو نص شكلي لا معنى له، يتكون من أحرف متتابعة بطريقة عشوائية غير مفهومة لغوياً</p>
+                    <a href="#">المزيد</a>
+                </div>
+                <div data-wow-delay="0.4s"
+                     class=" fadeInDown ourServicesSection d-flex flex-column align-items-center justify-content-center">
+                    <!-- slider Section 2 -->
+                    <img src="images/oil_1.png" alt="">
+                    <h2>هو نص شكلي لا معنى له</h2>
+                    <p>هو نص شكلي لا معنى له، يتكون من أحرف متتابعة بطريقة عشوائية غير مفهومة لغوياً</p>
+                    <a href="#">المزيد</a>
+                </div>
+                <div data-wow-delay="0.4s"
+                     class=" fadeInUp ourServicesSection d-flex flex-column align-items-center justify-content-center">
+                    <!-- slider Section 3 -->
+                    <img src="images/oil_1.png" alt="">
+                    <h2>هو نص شكلي لا معنى له</h2>
+                    <p>هو نص شكلي لا معنى له، يتكون من أحرف متتابعة بطريقة عشوائية غير مفهومة لغوياً</p>
+                    <a href="#">المزيد</a>
+                </div>
+                <div data-wow-delay="0.4s"
+                     class=" fadeInDown ourServicesSection d-flex flex-column align-items-center justify-content-center">
+                    <!-- slider Section 4 -->
+                    <img src="images/oil_1.png" alt="">
+                    <h2>هو نص شكلي لا معنى له</h2>
+                    <p>هو نص شكلي لا معنى له، يتكون من أحرف متتابعة بطريقة عشوائية غير مفهومة لغوياً</p>
+                    <a href="#">المزيد</a>
+                </div>
+                <div data-wow-delay="0.4s"
+                     class=" fadeInUp ourServicesSection d-flex flex-column align-items-center justify-content-center">
+                    <!-- slider Section 5 -->
+                    <img src="images/oil_1.png" alt="">
+                    <h2>هو نص شكلي لا معنى له</h2>
+                    <p>هو نص شكلي لا معنى له، يتكون من أحرف متتابعة بطريقة عشوائية غير مفهومة لغوياً</p>
+                    <a href="#">المزيد</a>
+                </div>
+                <div data-wow-delay="0.4s"
+                     class=" fadeInDown ourServicesSection d-flex flex-column align-items-center justify-content-center">
+                    <!-- slider Section 6 -->
+                    <img src="images/oil_1.png" alt="">
+                    <h2>هو نص شكلي لا معنى له</h2>
+                    <p>هو نص شكلي لا معنى له، يتكون من أحرف متتابعة بطريقة عشوائية غير مفهومة لغوياً</p>
+                    <a href="#">المزيد</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============== End ourServices =============== -->
+    <!-- ============== Start gasOffers =============== -->
+    <div class="gasOffers">
+        <div class="container">
+            <div class="totalGasOffers d-flex align-items-center ">
+                <div data-wow-delay="0.3s"
+                     class=" gasOffersImg col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">
+                    <a href="connect_with_us_AR.html5"><img src="images/tablet_img.png" alt=""></a>
+                </div>
+                <div data-wow-delay="0.3s" class=" gasOffersArticle d-flex flex-column col-12 col-lg-6">
+                    <h2>عروض الغاز</h2>
+                    <p>هو نص شكلي لا معنى له، يتكون من أحرف متتابعة بطريقة عشوائية غير مفهومة لغوياً. الغرض الأساسي منه
+                        هو عرض أشكال النصوص وأحجامها وألوانها دون الاهتمام بالمحتوى . هو نص شكلي لا معنى له، يتكون من
+                        أحرف متتابعة بطريقة عشوائية غير مفهومة منه هو عرض أشكال الن</p>
+                    <div class="d-flex justify-content-end sliderData col-11">
+                        <a href="tel:19555" tabindex="0"><i class="fa fa-phone" aria-hidden="true"></i> 19555</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============== End gasOffers =============== -->
+    {% include 'homeConvertOffersSlider.twig' %}
+    <!-- ============== Start ourMaps =============== -->
+    <div class="ourMaps" id="ourMaps">
+        <div class="container">
+            <h2 class="ourMapsHeader">خريطتنا</h2>
+            <!--
+                note ######
+                (only the first section is display flex but any section must be dispalyed none and handled them by jquery)
+             -->
+            <!-- ########### Start this is ourMaps Section 1 ########### -->
+            <div class="row ourMaps_Section justify-content-between" id="ourMaps_Section_1">
+                <div class="col-12 col-md-11 col-lg-3 ourMaps_Section_Tabs">
+                    <div class="nav row nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a data-wow-delay="0.1s" class=" nav-link col-11 col-sm-5 col-lg-12 active main_tab"
+                           id="v-pills-masterGasStations_1-tab" data-toggle="pill" href="#v-pills-masterGasStations_1"
+                           role="tab" aria-controls="v-pills-masterGasStations_1" aria-selected="true">محطات ماستر
+                            جاس</a>
+                        <a data-wow-delay="0.2s" class=" nav-link col-11 col-sm-5 col-lg-12 main_tab"
+                           id="v-pills-carsTransferCenters_1-tab" data-toggle="pill"
+                           href="#v-pills-carsTransferCenters_1" role="tab"
+                           aria-controls="v-pills-carsTransferCenters_1" aria-selected="false">مراكز تحويل السيارات</a>
+                        <a data-wow-delay="0.3s" class=" nav-link col-11 col-sm-5 col-lg-12 tab_with_arrow_icon"
+                           id="v-pills-maadiStation1_1-tab" data-toggle="pill" href="#v-pills-maadiStation1_1"
+                           role="tab" aria-controls="v-pills-maadiStation1_1" aria-selected="false">محطة المعادي</a>
+                        <a data-wow-delay="0.4s" class=" nav-link col-11 col-sm-5 col-lg-12 tab_with_arrow_icon"
+                           id="v-pills-maadiStation1_2-tab" data-toggle="pill" href="#v-pills-maadiStation1_2"
+                           role="tab" aria-controls="v-pills-maadiStation1_2" aria-selected="false">محطة المعادي</a>
+                        <a data-wow-delay="0.5s" class=" nav-link col-11 col-sm-5 col-lg-12 tab_with_arrow_icon"
+                           id="v-pills-maadiStation1_3-tab" data-toggle="pill" href="#v-pills-maadiStation1_3"
+                           role="tab" aria-controls="v-pills-maadiStation1_3" aria-selected="false">محطة المعادي</a>
+                        <a data-wow-delay="0.6s" class=" nav-link col-11 col-sm-5 col-lg-12 tab_with_arrow_icon"
+                           id="v-pills-maadiStation1_4-tab" data-toggle="pill" href="#v-pills-maadiStation1_4"
+                           role="tab" aria-controls="v-pills-maadiStation1_4" aria-selected="false">محطة المعادي</a>
+                        <a data-wow-delay="0.7s" class=" nav-link col-11 col-sm-5 col-lg-12 tab_with_arrow_icon"
+                           id="v-pills-maadiStation1_5-tab" data-toggle="pill" href="#v-pills-maadiStation1_5"
+                           role="tab" aria-controls="v-pills-maadiStation1_5" aria-selected="false">محطة المعادي</a>
+                        <a data-wow-delay="0.8s" class=" nav-link col-11 col-sm-5 col-lg-12 tab_with_arrow_icon"
+                           id="v-pills-maadiStation1_6-tab" data-toggle="pill" href="#v-pills-maadiStation1_6"
+                           role="tab" aria-controls="v-pills-maadiStation1_6" aria-selected="false">محطة المعادي</a>
+                        <a data-wow-delay="0.9s" class=" nav-link col-11 col-sm-5 col-lg-12 tab_with_arrow_icon"
+                           id="v-pills-maadiStation1_7-tab" data-toggle="pill" href="#v-pills-maadiStation1_7"
+                           role="tab" aria-controls="v-pills-maadiStation1_7" aria-selected="false">محطة المعادي</a>
+                    </div>
+                </div>
+                <div class="col-11 col-lg-8 ourMaps_Section_Content">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-masterGasStations_1" role="tabpanel"
+                             aria-labelledby="v-pills-masterGasStations_1-tab">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.7279567539417!2d31.476956809539715!3d30.07333147787478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145819962803ea65%3A0xc3bbbfd8c6b13359!2z2YXYp9iz2KrYsSDYrNin2LMg2KfZhNmC2KfZh9ix2Kkg2KfZhNis2K_Zitiv2Kk!5e0!3m2!1sar!2seg!4v1616598649571!5m2!1sar!2seg"
+                                    allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-carsTransferCenters_1" role="tabpanel"
+                             aria-labelledby="v-pills-carsTransferCenters_1-tab">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.7279567539417!2d31.476956809539715!3d30.07333147787478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145819962803ea65%3A0xc3bbbfd8c6b13359!2z2YXYp9iz2KrYsSDYrNin2LMg2KfZhNmC2KfZh9ix2Kkg2KfZhNis2K_Zitiv2Kk!5e0!3m2!1sar!2seg!4v1616598649571!5m2!1sar!2seg"
+                                    allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-maadiStation1_1" role="tabpanel"
+                             aria-labelledby="v-pills-maadiStation1_1-tab">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.7279567539417!2d31.476956809539715!3d30.07333147787478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145819962803ea65%3A0xc3bbbfd8c6b13359!2z2YXYp9iz2KrYsSDYrNin2LMg2KfZhNmC2KfZh9ix2Kkg2KfZhNis2K_Zitiv2Kk!5e0!3m2!1sar!2seg!4v1616598649571!5m2!1sar!2seg"
+                                    allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-maadiStation1_2" role="tabpanel"
+                             aria-labelledby="v-pills-maadiStation1_2-tab">
+                            1_2 محطة المعادي
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-maadiStation1_3" role="tabpanel"
+                             aria-labelledby="v-pills-maadiStation1_3-tab">
+                            1_3 محطة المعادي
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-maadiStation1_4" role="tabpanel"
+                             aria-labelledby="v-pills-maadiStation1_4-tab">
+                            1_4 محطة المعادي
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-maadiStation1_5" role="tabpanel"
+                             aria-labelledby="v-pills-maadiStation1_5-tab">
+                            1_5 محطة المعادي
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-maadiStation1_6" role="tabpanel"
+                             aria-labelledby="v-pills-maadiStation1_6-tab">
+                            1_6 محطة المعادي
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-maadiStation1_7" role="tabpanel"
+                             aria-labelledby="v-pills-maadiStation1_7-tab">
+                            1_7 محطة المعادي
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ########### End this is ourMaps Section 1 ########### -->
+            <!-- ########### Start this is ourMaps Section 2 ########### -->  <!-- ##### must be display none ##### -->
+            <div class="row ourMaps_Section justify-content-between" id="ourMaps_Section_2">
+                <div class="col-12 col-md-11 col-lg-3 ourMaps_Section_Tabs">
+                    <div class="nav row nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link col-11 col-sm-5 col-lg-12 active main_tab"
+                           id="v-pills-masterGasStations_2-tab" data-toggle="pill" href="#v-pills-masterGasStations_2"
+                           role="tab" aria-controls="v-pills-masterGasStations_2" aria-selected="true">محطات ماستر
+                            جاس</a>
+                        <a class="nav-link col-11 col-sm-5 col-lg-12 main_tab" id="v-pills-carsTransferCenters_2-tab"
+                           data-toggle="pill" href="#v-pills-carsTransferCenters_2" role="tab"
+                           aria-controls="v-pills-carsTransferCenters_2" aria-selected="false">مراكز تحويل السيارات</a>
+                        <a class="nav-link col-11 col-sm-5 col-lg-12 tab_with_arrow_icon"
+                           id="v-pills-maadiStation2_1-tab" data-toggle="pill" href="#v-pills-maadiStation2_1"
+                           role="tab" aria-controls="v-pills-maadiStation2_1" aria-selected="false">محطة المعادي</a>
+                        <a class="nav-link col-11 col-sm-5 col-lg-12 tab_with_arrow_icon"
+                           id="v-pills-maadiStation2_2-tab" data-toggle="pill" href="#v-pills-maadiStation2_2"
+                           role="tab" aria-controls="v-pills-maadiStation2_2" aria-selected="false">محطة المعادي</a>
+                        <a class="nav-link col-11 col-sm-5 col-lg-12 tab_with_arrow_icon"
+                           id="v-pills-maadiStation2_3-tab" data-toggle="pill" href="#v-pills-maadiStation2_3"
+                           role="tab" aria-controls="v-pills-maadiStation2_3" aria-selected="false">محطة المعادي</a>
+                        <a class="nav-link col-11 col-sm-5 col-lg-12 tab_with_arrow_icon"
+                           id="v-pills-maadiStation2_4-tab" data-toggle="pill" href="#v-pills-maadiStation2_4"
+                           role="tab" aria-controls="v-pills-maadiStation2_4" aria-selected="false">محطة المعادي</a>
+                        <a class="nav-link col-11 col-sm-5 col-lg-12 tab_with_arrow_icon"
+                           id="v-pills-maadiStation2_5-tab" data-toggle="pill" href="#v-pills-maadiStation2_5"
+                           role="tab" aria-controls="v-pills-maadiStation2_5" aria-selected="false">محطة المعادي</a>
+                        <a class="nav-link col-11 col-sm-5 col-lg-12 tab_with_arrow_icon"
+                           id="v-pills-maadiStation2_6-tab" data-toggle="pill" href="#v-pills-maadiStation2_6"
+                           role="tab" aria-controls="v-pills-maadiStation2_6" aria-selected="false">محطة المعادي</a>
+                        <a class="nav-link col-11 col-sm-5 col-lg-12 tab_with_arrow_icon"
+                           id="v-pills-maadiStation2_7-tab" data-toggle="pill" href="#v-pills-maadiStation2_7"
+                           role="tab" aria-controls="v-pills-maadiStation2_7" aria-selected="false">محطة المعادي</a>
+                    </div>
+                </div>
+                <div class="col-11 col-lg-8 ourMaps_Section_Content">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-masterGasStations_2" role="tabpanel"
+                             aria-labelledby="v-pills-masterGasStations_2-tab">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.7279567539417!2d31.476956809539715!3d30.07333147787478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145819962803ea65%3A0xc3bbbfd8c6b13359!2z2YXYp9iz2KrYsSDYrNin2LMg2KfZhNmC2KfZh9ix2Kkg2KfZhNis2K_Zitiv2Kk!5e0!3m2!1sar!2seg!4v1616598649571!5m2!1sar!2seg"
+                                    allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-carsTransferCenters_2" role="tabpanel"
+                             aria-labelledby="v-pills-carsTransferCenters_2-tab">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.7279567539417!2d31.476956809539715!3d30.07333147787478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145819962803ea65%3A0xc3bbbfd8c6b13359!2z2YXYp9iz2KrYsSDYrNin2LMg2KfZhNmC2KfZh9ix2Kkg2KfZhNis2K_Zitiv2Kk!5e0!3m2!1sar!2seg!4v1616598649571!5m2!1sar!2seg"
+                                    allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-maadiStation2_1" role="tabpanel"
+                             aria-labelledby="v-pills-maadiStation2_1-tab">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.7279567539417!2d31.476956809539715!3d30.07333147787478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145819962803ea65%3A0xc3bbbfd8c6b13359!2z2YXYp9iz2KrYsSDYrNin2LMg2KfZhNmC2KfZh9ix2Kkg2KfZhNis2K_Zitiv2Kk!5e0!3m2!1sar!2seg!4v1616598649571!5m2!1sar!2seg"
+                                    allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-maadiStation2_2" role="tabpanel"
+                             aria-labelledby="v-pills-maadiStation2_2-tab">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.7279567539417!2d31.476956809539715!3d30.07333147787478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145819962803ea65%3A0xc3bbbfd8c6b13359!2z2YXYp9iz2KrYsSDYrNin2LMg2KfZhNmC2KfZh9ix2Kkg2KfZhNis2K_Zitiv2Kk!5e0!3m2!1sar!2seg!4v1616598649571!5m2!1sar!2seg"
+                                    allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-maadiStation2_3" role="tabpanel"
+                             aria-labelledby="v-pills-maadiStation2_3-tab">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.7279567539417!2d31.476956809539715!3d30.07333147787478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145819962803ea65%3A0xc3bbbfd8c6b13359!2z2YXYp9iz2KrYsSDYrNin2LMg2KfZhNmC2KfZh9ix2Kkg2KfZhNis2K_Zitiv2Kk!5e0!3m2!1sar!2seg!4v1616598649571!5m2!1sar!2seg"
+                                    allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-maadiStation2_4" role="tabpanel"
+                             aria-labelledby="v-pills-maadiStation2_4-tab">
+                            2_4 محطة المعادي
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-maadiStation2_5" role="tabpanel"
+                             aria-labelledby="v-pills-maadiStation2_5-tab">
+                            2_5 محطة المعادي
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-maadiStation2_6" role="tabpanel"
+                             aria-labelledby="v-pills-maadiStation2_6-tab">
+                            2_6 محطة المعادي
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-maadiStation2_7" role="tabpanel"
+                             aria-labelledby="v-pills-maadiStation2_7-tab">
+                            2_7 محطة المعادي
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ########### End this is ourMaps Section 2 ########### -->
+        </div>
+    </div>
+    <!-- ============== End ourMaps =============== -->
+    <!-- =============== start the section control of ourMaps =============== -->
+    <!--  ################# this is controls pagination tabs ################# -->
+    <section class="ourMaps_control">
+        <div class="container">
+            <ul class="change_sections d-flex align-items-center" id="change_sections">
+                <a href="#" id="change_sections_next"><i class="fas fa-angle-right"></i></a>
+                <a class="change_tab_item active" id='OurMaps_1_tab_btn' data-target="ourMaps_Section_1"
+                   href="#ourMaps">1</a>
+                <a class="change_tab_item" id='OurMaps_2_tab_btn' data-target="ourMaps_Section_2" href="#ourMaps">2</a>
+                <a href="#" id="change_sections_prev"><i class="fas fa-angle-left"></i></a>
+            </ul>
+        </div>
+    </section>
+    <!-- =============== End the section control of ourMaps =============== -->
+    <!-- ============== Start latestNews =============== -->
+    {% include 'homeNewsSlider.twig' %}
+    <!-- ============== End latestNews =============== -->
+    <!-- ============== Start ourPartners =============== -->
+    <div class='ourPartners'>
+        <div class="container">
+            <h2 class="ourPartnersHeader">شركائنا</h2>
+            <div class="ourPartnersLinks d-flex justify-content-between">
+                <a data-wow-delay="0.2s" class="" href="#">
+                    <img src="images/masr_tamin_1.png" alt="">
+                </a>
+                <a data-wow-delay="0.4s" class="" href="#">
+                    <img src="images/perojet.png" alt="">
+                </a>
+                <a data-wow-delay="0.6s" class="" href="#">
+                    <img src="images/egypt_gas.png" alt="">
+                </a>
+                <a data-wow-delay="0.8s" class="" href="#">
+                    <img src="images/masr_tamin_2.png" alt="">
+                </a>
+                <a data-wow-delay="1s" class="" href="#">
+                    <img src="images/masr_petrol.png" alt="">
+                </a>
+                <a data-wow-delay="1.2s" class="" href="#">
+                    <img src="images/eni.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- ============== End ourPartners =============== -->
+    <!-- ============== Start InquiriesComplaints =============== -->
+    {% include 'inquiriesblk.twig' %}
+    <!-- ============== End InquiriesComplaints =============== -->
+{% endblock %}

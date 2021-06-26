@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ SITEURL }}</title>
+    <link rel="icon" href="images/logo_tab.png">
+    <link rel="stylesheet" href="{{ THEMEURL }}/CSS/bootrap_rtl_4.5.3.min.css">
+    <link rel="stylesheet" href="{{ THEMEURL }}/CSS/fancyBox.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ THEMEURL }}/CSS/all.css" />
+    <link rel="stylesheet" href="{{ THEMEURL }}/CSS/animate.css">
+    <link rel="stylesheet" href="{{ THEMEURL }}/CSS/slick.css">
+    <link rel="stylesheet" href="{{ THEMEURL }}/CSS/slick-theme.css">
+    <link rel="stylesheet" href="{{ THEMEURL }}/CSS/main.css"> 
+    <link rel="stylesheet" href="{{ THEMEURL }}/CSS/custom.css?v={{ TIMENOW }}">
+    <link rel="stylesheet" href="{{ THEMEURL }}/CSS/AR_style.css">
+</head>
+<body>  
+    <!-- ============== Start Navbar =============== -->
+    {% include 'navbar.twig' %}
+    <!-- ============== End Navbar =============== -->
+    <!-- ============== Start go_up icon =============== -->
+    <i class="fas fa-angle-double-up go_up"><a href="#"></a></i>
+    <!-- ============== End go_up icon =============== -->
+
+    {% block content %}
+        
+    {% endblock %}
+
+
+    <!-- ============== Start footer =============== -->
+    <footer>
+        <div class="footerSections d-flex">
+            <div class="footerSection col-sm-6 col-lg-3">
+                <h2 class="text-center">الوظائف</h2>
+                <p>هو نص شكلي لا معنى له، يتكون  من أحرف متتابعة بطريقة عشوائية  غير مفهومة لغوياً. الغرض الأساسي  منه هو عرض أشكال النصوص  وأحجامها وألوانها دون الاهتمام  بالمحتوى</p>
+            </div>
+            <div class="footerSection col-sm-6 col-lg-3">
+                <h2 class="text-center">عن ماستر جاز</h2>
+                <p>هو نص شكلي لا معنى له، يتكون  من أحرف متتابعة بطريقة عشوائية  غير مفهومة لغوياً. الغرض الأساسي  منه هو عرض أشكال النصوص  وأحجامها وألوانها دون الاهتمام  بالمحتوى</p>
+            </div>
+            <div class="footerSection col-sm-6 col-lg-3">
+                <h2 class="text-center">الخدمات</h2>
+                <p>هو نص شكلي لا معنى له، يتكون  من أحرف متتابعة بطريقة عشوائية  غير مفهومة لغوياً. الغرض الأساسي  منه هو عرض أشكال النصوص  وأحجامها وألوانها دون الاهتمام  بالمحتوى</p>
+                <!-- #### links -->
+                <!-- <ul class="footerLinks d-flex flex-column">
+                    <a href="#">رابط خدمة عملاء</a>
+                    <a href="#">رابط خدمة عملاء</a>
+                    <a href="#">رابط خدمة عملاء</a>
+                </ul> -->
+            </div>
+            <div class="footerSection col-sm-6 col-lg-3">
+                <h2 class="text-center">تواصل معنا</h2>
+                <p>هو نص شكلي لا معنى له، يتكون  من أحرف متتابعة بطريقة عشوائية  غير مفهومة لغوياً. الغرض الأساسي  منه هو عرض أشكال النصوص  وأحجامها وألوانها دون الاهتمام  بالمحتوى</p>
+                <ul class="contactData d-flex align-items-center">
+                    <h2>19134</h2>
+                    <li class="iconsList d-flex">
+                        <a href="tel:+2056284545"><i class="fas fa-phone-alt d-flex align-items-center justify-content-center"></i></a>
+                        <a href="https://www.facebook.com/MastergasEG" target="_blank"><i class="fab fa-facebook-f d-flex align-items-center justify-content-center"></i></a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        <div class="footerCopyRights text-center">
+            <p>جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+    <!-- ============== End footer =============== -->
+    <!-- ============== JavaScripts =============== -->
+    <script src="{{ THEMEURL }}/JS/jquery_3.6.0.min.js"></script>
+    <script src="{{ THEMEURL }}/JS/propper.js"></script>
+    <script src="{{ THEMEURL }}/JS/bootstrap_rtl_4.5.3.bundle.min.js"></script>
+    <script src="{{ THEMEURL }}/JS/slick.min.js"></script>
+    <script src="{{ THEMEURL }}/JS/wow.min.js"></script>
+    <script src="{{ THEMEURL }}/JS/fancyBox.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // ###### calculator function
+            $('#calcBtn').click(function () {  
+                var fuelConsumptionInput = $("#fuelConsumptionInput").val(),
+                    gasoline92Input = $('#gasoline92Input').val(),
+                    naturalGasInput = $('#naturalGasInput').val(),
+
+                monthlySavingsInput = $('#monthlySavingsInput'),
+                annualSavingsInput = $('#annualSavingsInput');
+
+                if(fuelConsumptionInput == ""){
+                    fuelConsumptionInput = 0;
+                }
+
+                if(gasoline92Input == ""){
+                    gasoline92Input = 0;
+                }
+
+                if(naturalGasInput == ""){
+                    naturalGasInput = 0;
+                }
+
+                fuelConsumptionInput = parseInt(fuelConsumptionInput);
+                gasoline92Input = parseInt(gasoline92Input);
+                naturalGasInput = parseInt(naturalGasInput);
+                    
+                // ######### the operations
+                monthlySavingsInput.val( fuelConsumptionInput + gasoline92Input + naturalGasInput );
+                annualSavingsInput.val( fuelConsumptionInput + gasoline92Input + naturalGasInput );
+            });
+        });
+    </script>
+    <script src="{{ THEMEURL }}/JS/main.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+</body>
+</html>

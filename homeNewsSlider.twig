@@ -1,0 +1,20 @@
+<div class='latestNews'>
+    <div class="container">
+        <h2 class="latestNewsHeader">{{ L.get_msg('latest news') }}</h2>
+        <div class="latestNewsSlider">
+            {% for article in news %}
+            <div data-wow-delay="0.4s"
+                 class=" fadeInUp latestNewsSection d-flex flex-column align-items-center justify-content-end">
+                <!-- slider Section 1 -->
+                <div class="firstImgBack d-flex justify-content-center"
+                     style="background-image: url('{{ SITEURL }}/{{ article.meta.post_image.url }}');"></div> <!-- Background top -->
+                <div class="latestNewsSectionContent d-flex flex-column align-items-center justify-content-center">
+                    <p>{{ H.trans(article.post_title) }}</p>
+                    {#<p class="small">{{ H.cut(H.trans(article.post_excerpt)) }}</p>#}
+                    <a href="{{ SITEURL }}/index.php?id={{ article.id }}">{{ L.get_msg('read more') }}</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

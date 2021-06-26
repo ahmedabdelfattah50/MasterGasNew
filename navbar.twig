@@ -1,0 +1,117 @@
+<!-- ============== Start Navbar =============== -->
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <a class="navbar-brand" href="index_AR.html">
+        <img src="images/logo.jpg" alt="">
+    </a>
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav col-11 d-flex justify-content-between">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ SITEURL }}">{{ L.get_msg('home') }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ SITEURL }}/index.php?id=10">{{ L.get_msg('about us') }}</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
+                    <a class="nav-link">
+                        {{ L.get_msg('our services') }}
+                    </a>
+                    <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{ SITEURL }}/index.php?id=11">{{ L.get_msg('cng stations') }}</a>
+                        <a class="dropdown-item" href="{{ SITEURL }}/index.php?id=12">{{ L.get_msg('vehicles convert') }}</a>
+                        <a class="dropdown-item" href="{{ SITEURL }}/index.php?id=13">{{ L.get_msg('mobile cng') }}</a>
+                        <a class="dropdown-item" href="{{ SITEURL }}/index.php?id=14">{{ L.get_msg('cylinders test') }}</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link">
+                        {{ L.get_msg('our partners') }}
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{ SITEURL }}/index.php?id=15">{{ L.get_msg('our clients') }}</a>
+                        <a class="dropdown-item" href="{{ SITEURL }}/index.php?id=16">{{ L.get_msg('our partners') }}</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ SITEURL }}/index.php?action=news">{{ L.get_msg('news') }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="jobs_AR.html">{{ L.get_msg('career') }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="connect_with_us_AR.html">{{ L.get_msg('contact us') }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hsse_AR.html">{{ L.get_msg('hsse') }}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="NavbarMobile">
+            <div class="navMenuMobile" id="navMenuMobile">
+                <a href="javascript:void(0)" class="closebtn">&times;</a>
+                <div class="menuAllSections d-flex flex-column">
+                    <ul class="navbar-nav col-11 d-flex justify-content-between">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{{ SITEURL }}">{{ L.get_msg('home') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ SITEURL }}/index.php?id=10">{{ L.get_msg('about us') }}</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link">
+                                {{ L.get_msg('our services') }}
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="{{ SITEURL }}/index.php?id=11">{{ L.get_msg('cng stations') }}</a>
+                                <a class="dropdown-item" href="{{ SITEURL }}/index.php?id=12">{{ L.get_msg('vehicles convert') }}</a>
+                                <a class="dropdown-item" href="{{ SITEURL }}/index.php?id=13">{{ L.get_msg('mobile cng') }}</a>
+                                <a class="dropdown-item" href="{{ SITEURL }}/index.php?id=14">{{ L.get_msg('cylinders test') }}</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link">
+                                {{ L.get_msg('our partners') }}
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="{{ SITEURL }}/index.php?id=15">{{ L.get_msg('our clients') }}</a>
+                                <a class="dropdown-item" href="{{ SITEURL }}/index.php?id=16">{{ L.get_msg('our partners') }}</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ SITEURL }}/index.php?action=news">الأخبار</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="jobs_AR.html">الوظائف</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="connect_with_us_AR.html">تواصل معنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hsse_AR.html">HSSE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="langLink">
+        <!-- select the language of the website -->
+        <ul class="navbar-nav d-flex justify-content-center align-items-center flex-row"  >
+            <li class="nav-item">
+                <a class="nav-link" href="#">{% if L.getUserLang() == 'ar' %}
+                        {{ L.get_msg('EN') }}
+                        {% else %}
+                            {{ L.get_msg('AR') }}
+                    {% endif %}</a>
+            </li>
+            <li>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars navbarMenu"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- ============== End Navbar =============== -->

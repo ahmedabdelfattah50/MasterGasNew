@@ -1,0 +1,21 @@
+<!-- ============== Start transferOffers =============== -->
+<div class='transferOffers'>
+    <div class="container">
+        <h2 class="transferOffersHeader">{{ L.get_msg('convert offers') }}</h2>
+        <!-- ########## this is the arrows of slider ########## -->
+        <div class="transferOffersSlider">
+            {% for article in offers %}
+                <div data-wow-delay="0.4s" class=" fadeInUp transferOffersSection d-flex flex-column align-items-center justify-content-end">    <!-- slider Section 1 -->
+                    <div class="firstImgBack" style="background-image: url('{{ SITEURL }}/{{ article.meta.post_image.url }}');"></div> <!-- Background top -->
+                    <div class="transferOffersSectionContent d-flex flex-column align-items-center justify-content-center">
+                        <p>{{ H.trans(article.post_title) }}</p>
+                        {#<p class="small">{{ H.cut(H.trans(article.post_excerpt)) }}</p>#}
+                        <a href="{{ SITEURL }}/index.php?id={{ article.id }}">{{ L.get_msg('read more') }}</a>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+<!-- ============== End transferOffers =============== -->

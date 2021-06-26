@@ -1,0 +1,41 @@
+{% extends "base.twig" %}
+{% block content %}
+    <!-- ============== Start pageHeader =============== -->
+    <div class="pageHeader text-center">
+        <div class="container">
+            <h2 data-wow-delay="0.2s" class="wow">{{ L.get_msg('news') }}</h2>
+        </div>
+    </div>
+    <!-- ============== End pageHeader =============== -->
+    <!-- ###### allNewsInPage ###### -->
+    <div class="allNewsInPage">
+        <!-- ============== Start newestNews =============== -->
+        <div class="newestNews">
+            <div class="container">
+            <div class="row">
+                {% for item in 1..10  %}
+                    {% for article in news %}
+                        <div class="mb-3 col-md-3 col-sm-12">
+                        <div class="newsCard card p-0">
+                            <div class="cardImg" style="background-image: url({{ SITEURL }}/{{ article.meta.post_image.url }});" alt="{{ H.trans(article.post_title) }}"></div>
+                            <div class="card-body">
+                                <b class="card-title">
+                                    <a href="{{ SITEURL }}/index.php?id={{ article.id }}">{{ H.trans(article.post_title) }}</a>
+                                </b>
+                                <p class="small text-disable d-block"><i class="far fa-calendar-alt"></i> {{ article.post_date|date('Y-m-d') }}</p>
+                                <p class="card-text small mt-2">{{ H.cut(H.trans(article.post_excerpt)) }}</p>
+                            </div>
+                        </div>
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+
+            </div>
+            </div>
+        </div>
+        <!-- ============== End newestNews =============== -->
+    </div>
+    <!-- ============== Start InquiriesComplaints =============== -->
+    {% include 'inquiriesblk.twig' %}
+    <!-- ============== End InquiriesComplaints =============== -->
+{% endblock %}

@@ -1,0 +1,5488 @@
+/* ################### Start Global ################### */
+body {
+    overflow-X: hidden;
+}
+ 
+*::selection { 
+    background: #cc2121;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: transparent;
+    background: #16acaa;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    padding: 0;
+    z-index: 2;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: #16acaa;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slick-next::before {
+    color: #fff;
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 17px;
+}
+.slick-prev:before {
+    color: #fff;
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 17px;
+}
+.sliderData a {
+    text-decoration: none;
+    background: #16acaa;
+    border-radius: 20px;
+    padding: 4px 40px;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+}
+/* ============== Start Navbar =============== */
+.navbar {
+    background: #fff;
+    padding: 15px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar .navbar-brand {
+    margin: 0 15px;
+}
+
+.navbar .navbar-brand img {
+    width: 135px;
+    height: 55px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav {
+    padding: 0;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #707070 !important;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0;
+}
+
+.navbar .navbar-nav .nav-item.dropdown {
+    cursor: context-menu;
+}
+
+.navbar .navbar-nav .nav-item.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-toggle::after {
+    display: none;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu {
+    padding: 34px 0 10px;
+    text-align: center;
+    border: none;
+    border-radius: 0; 
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu::after {
+    display: inline-block;
+    top: 14px;
+    position: absolute;
+    vertical-align: .255em;
+    content: "";
+    border-bottom: 0;
+    border-right: 0.5em solid transparent;
+    border-top: 0.7em solid;
+    border-left: 0.5em solid transparent;
+    color: #ed3239;
+    left: 43%;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item {
+    color: #707070 !important;
+    font-size: 18px;
+    padding: 10px 10px;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover {
+    color: #ed3239 !important;
+    background: transparent !important;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav:last-child .nav-item .nav-link:hover {
+    color: #ed3239 !important;
+}
+
+.navbar .langLink .nav-item .nav-link {
+    color: #16acaa !important;
+    margin: 0 15px;
+}
+
+.NavbarMobile .navMenuMobile {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.NavbarMobile .navMenuMobile .menuAllSections .nav-item {
+    color: #707070;
+    padding: 0px;
+}
+
+.NavbarMobile .navMenuMobile .menuAllSections .nav-item .dropdown-menu::after {
+    display: none;
+}
+
+.NavbarMobile .navMenuMobile .menuAllSections .nav-item .dropdown-menu .dropdown-item {
+    padding: 5px 0;
+}
+
+.NavbarMobile .navMenuMobile .closebtn {
+    content: '';
+    position: absolute;
+    background: #cc2121;
+    color: #fff;
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+    display: none;
+    right: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.NavbarMobile .navMenuMobile a {
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+    display: none;
+}
+/* ============== End Navbar =============== */
+/* ============== Start go_up icon =============== */
+.go_up {
+    position: fixed;
+    right: 40px;
+    top: 90%;
+    padding: 15px 10px;
+    background: #fff;
+    border: 2px solid #16acaa;
+    box-shadow: 0 0 10px #16acaa;
+    color: #16acaa;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 55 !important;
+}
+/* ============== End go_up icon =============== */ 
+/* ============== Start InquiriesComplaints =============== */
+.InquiriesComplaints {
+    background: #16acaa;
+    padding: 60px 0;
+    margin-bottom: 10px;
+}
+
+.InquiriesComplaints .InquiriesComplaintsContent i {
+    color: #fff; 
+    font-size: 40px;
+}   
+
+.InquiriesComplaints .InquiriesComplaintsContent .textContent {
+    padding: 0 10px;
+}
+
+.InquiriesComplaints .InquiriesComplaintsContent h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.InquiriesComplaints .InquiriesComplaintsContent p {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+}
+
+.InquiriesComplaints .InquiriesComplaintsBtns a {
+    padding: 15px 40px;
+    border: none;
+    font-size: 17px;
+    margin: 5px;
+    background: #fff;
+    color: #16acaa;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.InquiriesComplaints .InquiriesComplaintsBtns a:hover {
+    box-shadow: 0 0 10px #fff;
+}
+/* ============== End InquiriesComplaints =============== */
+/* ============== Start footer =============== */
+footer {
+    padding: 40px 20px;
+    background: #e5e5e5;
+}
+
+footer .footerSections .footerSection {
+    padding: 0 20px;
+}
+
+footer .footerSections .footerSection h2 {
+    color: #000;
+    font-weight: 900 !important;
+    font-size: 22px;
+}
+
+footer .footerSections .footerSection h2 a {
+    color: #000;
+}
+
+footer .footerSections .footerSection p {
+    color: #000;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+footer .footerSections .footerSection .contactData {
+    padding: 0;
+    margin: 0;
+}
+ 
+footer .footerSections .footerSection .contactData .iconsList {
+    list-style: none;
+    padding: 0 20px;
+}
+
+footer .footerSections .footerSection .contactData a {
+    text-decoration: none;
+}
+
+footer .footerSections .footerSection .contactData i {
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    background: #000;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+footer .footerSections .footerSection .contactData i:hover {
+    background: #ed3239;
+}
+
+footer .footerSections .footerSection .contactData h2 {
+    color: #000;
+    font-weight: 900;
+    font-size: 25px;
+    margin: 0;
+}
+
+footer .footerSections .footerSection .footerLinks a {
+    text-decoration: none;
+    color: #000;
+    margin: 2px 0;
+}
+
+footer .footerSections .footerSection .footerLinks a:hover {
+    font-weight: 600;
+}
+
+footer .footerCopyRights p {
+    color: #000;
+    font-size: 18px;
+    margin: 0;
+}
+/* ============== End footer =============== */
+/* ============== Start pageHeader =============== */
+.pageHeader {
+    padding: 80px 0;
+    background-image: url('../images/header_page_background.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 95px;
+}
+
+.pageHeader h2 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.pageHeader p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.pageHeader a {
+    color: #fff;
+    text-decoration: none;
+}
+/* ============== End pageHeader =============== */
+/* ################### End Global ################### */
+
+
+/* ################### Start index Page ################### */
+/* ============== Start Main =============== */
+main {
+    height: 570px;
+    z-index: 0;
+}
+
+main .carousel {
+    margin-top: 95px;
+}
+
+main .carousel .carousel-indicators {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+main .carousel .carousel-item {
+    height: 570px;
+    top: 0 !important;
+    left: 0;
+    width: 100%;
+}
+
+main .carousel .carousel-item .carousel-caption {
+    height: 100%;
+}
+
+main .carousel .carousel-item .carousel-caption .sliderContent .videoIcon {
+    height: 40px !important;
+    width: 40px;
+}
+
+main .carousel .carousel-item .carousel-caption .sliderContent h2 {
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+main .carousel .carousel-item .carousel-caption .sliderContent p {
+    font-size: 15px;
+    margin: 0;
+}
+
+main .carousel {
+    min-height: 570px;
+    position: absolute;
+    top: 0px;
+    padding: 0;
+}
+
+main h1 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+main .whoWeLink {
+    color: #fff;
+    text-decoration: none;
+}
+
+main .whoWeLink .whoWeSection {
+    text-align: center;
+}
+
+main a {
+    text-decoration: none;
+}
+
+main .scrollMouseIcon {
+    margin-top: 20px;
+    width: 23px;
+    height: 55px;
+    transition: 0.3s ease-in-out;
+    animation: scrollMouseIconMoves 2s infinite 0.2s;
+}
+
+@keyframes scrollMouseIconMoves {
+    0% {
+        transform: translate(0px,0px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px,40px);
+    }
+}
+/* ------ main tools */
+main .mainTools {
+    position: fixed;
+    width: 240px;
+    z-index: 10000 !important;
+    padding: 0 0 10px;
+    top: 25%;
+}
+
+main .mainTools ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+main .mainTools ul li {
+    width: 240px;
+    height: 50px;
+    margin: 5px 0;
+    overflow: visible;
+    position: relative;
+    -moz-transition: ease-in-out 0.6s;
+    -o-transition: ease-in-out 0.6s;
+    -webkit-transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.6s;
+}
+
+main .mainTools ul li .liSectionItems {
+    width: 300px;
+    height: 50px;
+    display: block;
+    background-color: #fff;
+    background-position: left center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+main .mainTools ul li i {
+    width: 60px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #16acaa;
+    float: right;
+    -moz-transition: ease-in-out 0.6s;
+    -o-transition: ease-in-out 0.6s;
+    -webkit-transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.6s;
+}
+
+main .mainTools ul li .toolSectionData {
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    float: left;
+    color: #082647;
+    padding: 0 10px;
+    font-size: 1.125em;
+    line-height: 1.22222em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+main .mainTools ul li .toolSectionData p,
+main .mainTools ul li .toolSectionData a {
+    margin: 0;
+    color: #16acaa;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+main .mainTools ul li .toolSectionData a:hover {
+    color: #cc2121;
+}
+
+main .mainTools ul li .toolSectionData input {
+    color: #cc2121;
+    outline-color: #16acaa;
+}
+/* ============== End Main =============== */
+/* ============== Start mainBranches =============== */
+.mainBranches .totalMainBranches .branchSection {
+    text-align: center;
+}
+
+.mainBranches .totalMainBranches {
+    margin-top: 60px;
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px 0px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+}
+
+.mainBranches .totalMainBranches .branchSection .branchImg {
+    height: 65px;
+    width: 65px;
+    margin-bottom: 10px;
+}
+
+.mainBranches .totalMainBranches .branchSection img {
+   height: 100%;
+   width: 100%;
+}
+
+.mainBranches .totalMainBranches .branchSection h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #444444;
+}
+
+.mainBranches .totalMainBranches .branchSection p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0 25px;
+    color:#707070;
+}
+/* ============== End mainBranches =============== */
+/* ============== Start calculatorModal =============== */
+.calculatorModal .modal-header {
+    border: none;
+    padding: 30px 16px 20px;
+}
+
+.calculatorModal .modal-header .close {
+    background: #ed3239;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    outline: none;
+    margin-left: 0px;
+}
+
+.calculatorModal .modal-header .close span {
+    color: #fff;
+    border-radius: 50%;
+}
+
+.calculatorModal .modal-header .close span i {
+    font-size: 20px;
+}
+
+.calculatorModal .modal-body {
+    padding: 10px 16px 30px;
+}
+
+.calculatorModal .modal-body .bodyContent {
+    border: 5px solid #16acaa;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.calculatorModal .modal-body .bodyContent .headerBody {
+    padding-bottom: 20px;
+}
+
+.calculatorModal .modal-body .bodyContent .headerBody h2 {
+    color: #ed3239;
+    font-size: 35px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.calculatorModal .modal-body .bodyContent .headerBody h2::after {
+    position: absolute;
+    content: '';
+    height: 7px;
+    width: 70%;
+    top: 100%;
+    left: 15%;
+    border-radius: 10px;
+    background: #16acaa;
+}
+
+.calculatorModal .modal-body .bodyContent .fuelConsumption,
+.calculatorModal .modal-body .bodyContent .gasoline92,
+.calculatorModal .modal-body .bodyContent .naturalGas {
+    background: #16acaa;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.calculatorModal .modal-body .bodyContent .fuelConsumption h2,
+.calculatorModal .modal-body .bodyContent .gasoline92 h2,
+.calculatorModal .modal-body .bodyContent .naturalGas h2 {
+    color: #fff;
+    font-size: 25px;
+}
+
+.calculatorModal .modal-body .bodyContent .fuelConsumption input,
+.calculatorModal .modal-body .bodyContent .gasoline92 input,
+.calculatorModal .modal-body .bodyContent .naturalGas input {
+    padding: 5px;
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    font-size: 20px;
+    color: #ed3239;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
+ 
+.calculatorModal .modal-body .bodyContent .fuelConsumption input::-webkit-outer-spin-button,
+.calculatorModal .modal-body .bodyContent .gasoline92 input::-webkit-outer-spin-button,
+.calculatorModal .modal-body .bodyContent .naturalGas input::-webkit-outer-spin-button,
+.calculatorModal .modal-body .bodyContent .fuelConsumption input::-webkit-inner-spin-button,
+.calculatorModal .modal-body .bodyContent .gasoline92 input::-webkit-inner-spin-button,
+.calculatorModal .modal-body .bodyContent .naturalGas input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.calculatorModal .modal-body .bodyContent .calcResult .calcBtnSec {
+    padding: 0;
+}
+
+.calculatorModal .modal-body .bodyContent .calcResult .calcBtnSec .calcBtn {
+    background: #ed3239;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 31px 10px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.calculatorModal .modal-body .bodyContent .calcResult .resultSec {
+    background: #16acaa;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.calculatorModal .modal-body .bodyContent .calcResult .resultSec .saving h2 {
+    font-size: 25px;
+    color: #fff;
+}
+
+.calculatorModal .modal-body .bodyContent .calcResult .resultSec .monthlySavings h2,
+.calculatorModal .modal-body .bodyContent .calcResult .resultSec .annualSavings h2 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.calculatorModal .modal-body .bodyContent .calcResult .resultSec .monthlySavings input,
+.calculatorModal .modal-body .bodyContent .calcResult .resultSec .annualSavings input {
+    padding: 5px;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #ed3239;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.calculatorModal .modal-body .bodyContent .errorMessageSection {
+    display: none;
+    padding-top: 10px;
+}
+/* ============== End calculatorModal =============== */
+/* ============== Start sliderAboutCompany =============== */
+.sliderAboutCompany {
+    padding: 120px 0;
+    position: relative;
+}
+
+.sliderAboutCompany .backCurve {
+    height: 360px;
+    width: 400px;
+    position: absolute;
+    background: #16acaa;
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection {
+    outline: none;
+    cursor: pointer;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-prev {
+    display: flex;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-prev::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f104";
+    color: #ed3239 !important;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-next {
+    display: flex;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-next::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f105";
+    color: #ed3239 !important;
+}
+
+.sliderAboutCompany .paginator-center {
+    position: absolute;
+    display: flex;
+    top: 8%;
+    padding: 0 5px;
+    height: 0px;
+    z-index: 2;
+}
+
+.sliderAboutCompany .paginator-center .buttonNextPrev {
+    padding: 0 20px;
+    border-radius: 20px;
+}
+
+.sliderAboutCompany .paginator-center .buttonNextPrev i {
+    font-size: 25px;
+    padding: 5px 20px;
+    color: #ed3239;
+    opacity: 0.7;
+}
+
+.sliderAboutCompany .paginator-center .buttonNextPrev i:hover {
+    opacity: 1;
+}
+
+.sliderAboutCompany .paginator-center .buttonNextPrev {
+    position: absolute;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-dots {
+    background: #fff;
+    top: -45%;
+    bottom: 150%;
+    height: 40px;
+    width: auto;
+    padding: 0 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-dots li {
+    display: flex;
+    justify-content: center;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-dots li button {
+    border: 1px solid #ed3239;
+    height: 0px;
+    width: 0px;
+    padding: 3px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-dots li {
+    margin: 0;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-dots li button::before {
+    display: none;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-dots li.slick-active button {
+    border: 1px solid #ed3239;
+    background: #ed3239;
+    height: 0px;
+    width: 0px;
+    padding: 3px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData h2 {
+    color: #444;
+    font-size: 32px;
+    font-weight: 600;
+    position: relative;
+    margin: 0 14px 12px;    
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData h2::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 39px;
+    background: #ed3239;
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData p {
+    color: #707070;
+    font-size: 20px;
+    margin: 0 14px 16px;  
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData a {
+    text-decoration: none;
+    background: #16acaa;
+    border-radius: 20px;
+    padding: 4px 40px;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData a:hover {
+    padding: 4px 70px;
+    box-shadow: 0 0 10px #16acaa;
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection .sliderImage {
+    padding: 0;
+    width: 440px; 
+    height: 270px !important;
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection .sliderImage img {
+    height: 100%;
+    width: 100%;
+}
+/* ============== End sliderAboutCompany =============== */
+/* ============== Start ourServices =============== */
+.ourServices {
+    width: 100%;
+    position: absolute;
+    padding: 10px 0;
+    background: #E5E5E5;
+}
+
+.ourServices .ourServicesHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    margin: -70px 30px 0px;
+}
+
+.ourServices .ourServicesHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.ourServices .ourServicesSlider {
+    padding: 40px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.ourServices .ourServicesSlider .slick-list {
+    width: 100%;
+}
+
+.ourServices .slick-slider .slick-track {
+    padding: 20px 0;
+}
+
+.ourServices .ourServicesSlider .ourServicesSection {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    background: #fff;
+    padding: 20px;
+    margin: 0 12px;
+    cursor: pointer;
+    outline: none;
+}
+
+.ourServices .ourServicesSlider .ourServicesSection img {
+    width: 145px;
+    height: 215px;
+    margin-bottom: 10px;
+}
+
+.ourServices .ourServicesSlider .ourServicesSection h2 {
+    color: #444;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.ourServices .ourServicesSlider .ourServicesSection p {
+    color: #707070;
+    font-size: 16px;
+}
+
+.ourServices .ourServicesSlider .ourServicesSection a {
+    background: #ed3239;
+    padding: 3px 30px;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.ourServices .ourServicesSlider .ourServicesSection a:hover {
+    box-shadow: 0 0 10px #ed3239;
+    padding: 3px 50px;
+}
+
+.ourServices .paginator-center {
+    display: flex;
+    justify-content: center;
+}
+
+.ourServices .paginator-center .buttonNextPrev {
+    width: 47%;
+    /* top: 97%; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.ourServices .paginator-center .buttonNextPrev a {
+    text-decoration: none;
+}
+
+.ourServices .paginator-center .buttonNextPrev i {
+    font-size: 25px;
+    color: #ed3239;
+    opacity: 0.7;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+.ourServices .paginator-center .buttonNextPrev i:hover {
+    opacity: 1;
+}
+
+.ourServices .paginator-center .buttonNextPrev {
+    position: absolute;
+    top: 96.5%;
+}
+
+.ourServices .ourServicesSlider .slick-dots {
+    background: #fff;
+    margin-top: -50px;
+    top: 112%;
+    bottom: 150%;
+    height: 40px; 
+    width: auto;
+    padding: 0 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+}
+
+.ourServices .ourServicesSlider .slick-dots li {
+    display: flex;
+    justify-content: center;
+}
+
+.ourServices .ourServicesSlider .slick-dots li button {
+    border: 1px solid #ed3239;
+    height: 0px;
+    width: 0px;
+    padding: 3px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+.ourServices .ourServicesSlider .slick-dots li {
+    margin: 0;
+}
+
+.ourServices .ourServicesSlider .slick-dots li button::before {
+    display: none;
+}
+
+.ourServices .ourServicesSlider .slick-dots li.slick-active button {
+    border: 1px solid #ed3239;
+    background: #ed3239;
+    height: 0px;
+    width: 0px;
+    padding: 3px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+/* ============== End ourServices =============== */
+/* ============== Start gasOffers =============== */
+.gasOffers {
+    padding: 100px 0;
+    margin-top: 489px;
+}
+
+.gasOffers .totalGasOffers {
+    flex-flow: row-reverse;
+    justify-content: space-between;
+}
+
+.gasOffers .totalGasOffers img {
+    height: 330px;
+    transition: 0.3s ease-in-out;
+}
+
+.gasOffers .totalGasOffers img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.gasOffers .totalGasOffers .gasOffersArticle {
+    padding: 0;
+}
+
+.gasOffers .totalGasOffers .gasOffersArticle h2 {
+    color: #16acaa;
+    margin: 0;
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 30px 20px;
+}
+
+.gasOffers .totalGasOffers .gasOffersArticle h2:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.gasOffers .totalGasOffers .gasOffersArticle p {
+    color: #707070;
+    font-size: 20px;
+    line-height: 35px;
+}
+/* ============== End gasOffers =============== */
+/* ============== Start transferOffers =============== */
+.transferOffers {
+    position: relative;
+}
+
+.transferOffersSection {
+    background: #ed3239;
+    width: 100%;
+}
+
+.transferOffers .transferOffersHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    margin: 0 30px 20px;
+}
+
+.transferOffers .transferOffersHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.transferOffers .transferOffersSlider {
+    padding: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.transferOffers .transferOffersSlider .slick-list {
+    width: 100%;
+}
+
+.transferOffers .slick-slider .slick-track {
+    padding: 20px 0;
+}
+
+.transferOffers .transferOffersSlider .transferOffersSection {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.438);
+    background: #fff;
+    margin: 0 12px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+}
+
+.transferOffers .transferOffersSlider .transferOffersSection .firstImgBack {
+    width: 100%;
+    height: 270px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+}
+
+.transferOffers .transferOffersSlider .transferOffersSection .transferOffersSectionContent {
+    background: #16acaa;
+    /* background-image: url(../images/transferOffersContent_back_2.png); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center top; */
+    width: 100%;
+    height: 180px;
+    /* margin-top: -100px; */
+    /* padding-top: 100px; */
+}
+
+.transferOffers .transferOffersSlider .transferOffersSection p {
+    color: #ffffff;
+    font-size: 17px;
+    padding: 0 18px;
+}
+
+.transferOffers .transferOffersSlider .transferOffersSection a {
+    background: #fff;
+    padding: 3px 30px;
+    color: #ed3239;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.transferOffers .transferOffersSlider .transferOffersSection a:hover {
+    box-shadow: 0 0 10px #fff;
+    padding: 3px 50px;
+}
+
+.transferOffers .paginator-center {
+    display: flex;
+    justify-content: center;
+}
+
+.transferOffers .paginator-center .buttonNextPrev {
+    width: 47%;
+    top: 103%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.transferOffers .paginator-center .buttonNextPrev a {
+    text-decoration: none;
+}
+
+.transferOffers .paginator-center .buttonNextPrev i {
+    font-size: 25px;
+    color: #ed3239;
+    opacity: 0.7;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+.transferOffers .paginator-center .buttonNextPrev i:hover {
+    opacity: 1;
+}
+
+.transferOffers .transferOffersSlider .slick-dots {
+    background: #fff;
+    margin-top: -50px;
+    top: 112%;
+    bottom: 150%;
+    height: 40px; 
+    width: auto;
+    padding: 0 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+}
+
+.transferOffers .transferOffersSlider .slick-dots li {
+    display: flex;
+    justify-content: center;
+}
+
+.transferOffers .transferOffersSlider .slick-dots li button {
+    border: 1px solid #ed3239;
+    height: 0px;
+    width: 0px;
+    padding: 3px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+.transferOffers .transferOffersSlider .slick-dots li {
+    margin: 0;
+}
+
+.transferOffers .transferOffersSlider .slick-dots li button::before {
+    display: none;
+}
+
+.transferOffers .transferOffersSlider .slick-dots li.slick-active button {
+    border: 1px solid #ed3239;
+    background: #ed3239;
+    height: 0px;
+    width: 0px;
+    padding: 3px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+/* ============== End transferOffers =============== */
+/* ============== Start ourMaps =============== */
+.ourMaps {
+    padding: 70px 0 20px;
+}
+
+.ourMaps #ourMaps_Section_2 {
+    display: none;
+}
+
+.ourMaps .ourMapsHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    margin: 0 30px 20px;
+}
+
+.ourMaps .ourMapsHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}  
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills {
+    flex-flow: column;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a {
+    color: #707070;
+    background: #d3d3d3;
+    font-size: 18px;
+    margin: 5px 0;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a.main_tab {
+    color: #fff;
+    background: #16acaa;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after { 
+    position: absolute;
+    content: '';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f104";
+    font-size: 18px;
+    top: 12px;
+    color: #707070;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a:first-child {
+    margin-top: 0;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a:last-child {
+    margin-bottom: 0;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Content {
+    background: #d3d3d3;
+    padding: 0;
+    position: relative;
+    border-radius: 20px;
+    display: flex; 
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Content iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 20px
+}
+/* ============== End ourMaps =============== */
+/* =============== Start the section control of ourMaps =============== */
+.ourMaps_control .change_sections {
+    width: auto;
+}
+
+.ourMaps_control .change_sections .change_tab_item {
+    color: #707070;
+    font-size: 18px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.ourMaps_control .change_sections .change_tab_item.active {
+    font-weight: 700;
+}
+
+.ourMaps_control .change_sections i {
+    color: #ed3239;
+    font-size: 18px;
+    padding: 5px 20px;
+}
+/* =============== End the section control of ourMaps =============== */
+/* ============== Start latestNews =============== */
+.latestNews {
+    position: relative;
+    margin-top: 50px;   
+    background-image: url('../images/latestNewsBack.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    padding-bottom: 40px;
+}
+
+.latestNewsSection {
+    background: #ed3239;
+    width: 100%;
+}
+
+.latestNews .latestNewsHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    margin: 0 30px 20px;
+}
+
+.latestNews .latestNewsHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.latestNews .latestNewsSlider {
+    padding: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.latestNews .latestNewsSlider .slick-list {
+    width: 100%;
+}
+
+.latestNews .slick-slider .slick-track {
+    padding: 20px 0;
+}
+
+.latestNews .latestNewsSlider .latestNewsSection {
+    box-shadow: 0 0 15px rgba(23, 23, 23, 0.16);
+    background: #fff;
+    margin: 0 15px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    overflow: hidden;
+}
+
+.latestNews .latestNewsSlider .latestNewsSection .firstImgBack {
+    width: 100%;
+    height: 280px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-size: 96% 96%;
+}
+
+.latestNews .latestNewsSlider .latestNewsSection .latestNewsSectionContent {
+    background: #16acaa;
+    /* background-image: url(../images/latestNewsSliderCurve.png); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center top; */
+    width: 100%;
+    height: 150px;
+    /* margin-top: -40px; */
+    padding: 20px 20px 0;
+}
+
+.latestNews .latestNewsSlider .latestNewsSection p {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 0 7px;
+}
+
+.latestNews .latestNewsSlider .latestNewsSection a {
+    background: #fff;
+    padding: 3px 30px;
+    color: #ed3239;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.latestNews .latestNewsSlider .latestNewsSection a:hover {
+    box-shadow: 0 0 10px #fff;
+    padding: 3px 50px;
+}
+
+.latestNews .paginator-center {
+    display: flex;
+    justify-content: center;
+}
+
+.latestNews .latestNewsSlider .slick-next,
+.latestNews .latestNewsSlider .slick-prev {
+    background: #16acaa;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.latestNews .latestNewsSlider .slick-next {
+    right: -3%;
+}
+
+.latestNews .latestNewsSlider .slick-prev {
+    left: -3%;
+    z-index: 2;
+}
+
+.latestNews .latestNewsSlider .slick-next::before {
+    color: #fff;
+    content: "\f054";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.latestNews .latestNewsSlider .slick-prev:before {
+    color: #fff;
+    content: "\f053";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600;
+    font-size: 17px;
+}
+/* ============== End latestNews =============== */
+/* ============== Start ourPartners =============== */
+.ourPartners {
+    padding: 70px 0;
+}
+
+.ourPartners .ourPartnersHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    margin: 0 30px 30px;
+}
+
+.ourPartners .ourPartnersHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.ourPartners .ourPartnersLinks a {
+    width: 110px;
+    height: 110px;
+    transition: 0.3s ease-in-out;
+}
+
+.ourPartners .ourPartnersLinks a:hover {
+    transform: scale(1.5,1.5);
+}
+
+.ourPartners .ourPartnersLinks a img {
+    width: 100%;
+    height: 100%;
+}
+/* ============== End ourPartners =============== */
+/* ################### End index Page ################### */
+
+
+/* ################### Start CNG Mobile Page ################### */
+/* ============== Start aboutCngMobile =============== */
+.aboutCngMobile {
+    padding: 60px 0;
+}
+
+.aboutCngMobile .aboutCngMobileHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+}
+
+.aboutCngMobile .aboutCngMobileHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.aboutCngMobile p {
+    color: #707070;
+    font-size: 22px;
+    margin: 0 14px 16px;
+    line-height: 35px;
+    padding-top: 10px;
+}
+
+.aboutCngMobile .imgVideoContainer {
+    position: relative;
+    padding: 40px 0;
+}
+.aboutCngMobile .imgVideoContainer .playIconVideo {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+/* ============== End aboutCngMobile =============== */
+/* ============== Start transmissionMechanism =============== */
+.transmissionMechanism {
+    padding: 60px 0 150px;
+    background: #16acaa;
+}
+
+.transmissionMechanism .transmissionMechanismHeader {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+}
+
+.transmissionMechanism .transmissionMechanismHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.transmissionMechanism p {
+    color: #f5f5f5;
+    font-size: 22px;
+    margin: 0 14px 16px;
+    line-height: 35px;
+    padding-top: 10px;
+}
+/* ============== End transmissionMechanism =============== */
+/* ============== Start GallaryWithVideo =============== */
+.GallaryWithVideo {
+    padding: 0 0 50px;
+    position: relative;
+}
+
+.GallaryWithVideo .GallarySlider {
+    margin-top: -110px;
+}
+
+.GallaryWithVideo .GallarySlider .slick-next,
+.GallaryWithVideo .GallarySlider .slick-prev {
+    background: #16acaa;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.GallaryWithVideo .GallarySlider .slick-next::before {
+    color: #fff;
+    content: "\f054";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.GallaryWithVideo .GallarySlider .slick-prev:before {
+    color: #fff;
+    content: "\f053";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.GallaryWithVideo .GallarySlider {
+    padding: 20px;
+}
+
+.GallaryWithVideo .GallarySlider img {
+    width: 330px;
+}
+
+.GallaryWithVideo .imgVideoContainer {
+    position: relative;
+    padding: 5px 0 40px;
+}
+
+.GallaryWithVideo .imgVideoContainer a {
+    padding: 0;
+}
+
+.GallaryWithVideo .imgVideoContainer a img {
+    width: 100%;
+}
+
+.GallaryWithVideo .imgVideoContainer .playIconVideo {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+}
+/* ============== End GallaryWithVideo =============== */
+/* ################### End CNG Mobile Page ################### */
+
+
+/* ################### Start OurParteners Page ################### */
+/* ============== Start ourPartnersLogos =============== */
+.ourPartnersLogos {
+    padding: 60px 0;
+}
+
+.ourPartnersLogos a {
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.ourPartnersLogos a:hover {
+    transform: scale(1.2,1.2);
+}
+
+.ourPartnersLogos a img {
+    width: 190px;
+    height: 190px;
+}
+/* ============== End ourPartnersLogos =============== */
+/* ################### End OurParteners Page ################### */
+
+
+/* ################### Start OurClients Page ################### */
+/* ============== Start ourClientsInfo =============== */
+.ourClientsInfo {
+    padding: 60px 0;
+}
+
+.ourClientsInfo .clientSection {
+    padding: 40px 0;
+    text-decoration: none;
+}
+
+.ourClientsInfo .clientSection img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.ourClientsInfo .clientSection:hover img {
+    transform: scale(1.1 , 1.1);
+}
+
+.ourClientsInfo .clientSection h2 {
+    color: #16acaa;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* ============== End ourClientsInfo =============== */
+/* ################### End OurClients Page ################### */
+
+
+/* ################### Start jobs Page ################### */
+/* ============== Start jobsDetails =============== */
+.jobsDetails {
+    padding: 60px 0;
+}
+
+.jobsDetails .jobsDetailsHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+}
+
+.jobsDetails .jobsDetailsHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.jobsDetails p {
+    color: #707070;
+    font-size: 22px;
+    margin: 0 14px 16px;
+    line-height: 35px;
+    padding-top: 10px;
+}
+
+.jobsDetails form {
+    padding: 60px 0 0;
+}
+
+.jobsDetails form .btnContainer button {
+    background: #16acaa !important; 
+    color: #fff;
+    padding: 10px 40px;
+    outline: none;
+    margin-top: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.jobsDetails form .btnContainer button:hover {
+    padding: 10px 60px;
+    box-shadow: 0 0 10px #16acaa;
+}
+
+.jobsDetails .formAllInputs input,
+.jobsDetails .formAllInputs select {
+    color: #707070;
+}
+
+.jobsDetails .formAllInputs select {
+    appearance: none;
+}
+
+.jobsDetails .formAllInputs .selectSection {
+    position: relative;
+}
+
+.jobsDetails .formAllInputs .selectSection::after {
+    content: '\f078';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600; 
+    color: #707070;
+    position: absolute;
+    top: 20%;
+    padding: 0 1em;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.jobsDetails .formAllInputs .uploadSection {
+    position: relative;
+}
+
+.jobsDetails .formAllInputs .uploadSection::after {
+    content: '\f093';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: #f8f9fa;
+    position: absolute;
+    top: 20%;
+    padding: 0 1em;
+    cursor: pointer;
+    pointer-events: none;
+    display: block;
+    border: 1px;
+    border-style: double;
+    background-color: gray;
+}
+
+.jobsDetails .formAllInputs #labelUploadCv {
+    margin: 0;
+}
+
+.jobsDetails .formAllInputs input::placeholder,
+.jobsDetails .formAllInputs select::placeholder {
+    color: #707070;
+}
+/* ============== End jobsDetails =============== */
+/* ################### End jobs Page ################### */
+
+
+/* ################### Start connect_with_us Page ################### */
+/* ============== Start connectWithUsDetails =============== */
+.connectWithUsDetails {
+    padding: 60px 0;
+}
+
+.connectWithUsDetails .connectWithUsDetailsHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+}
+
+.connectWithUsDetails .connectWithUsDetailsHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.connectWithUsDetails .connectWithUsData form {
+    padding: 30px 10px;
+}
+
+.connectWithUsDetails .connectWithUsData form div {
+    padding: 0;
+}
+
+.connectWithUsDetails .connectWithUsData form input,
+.connectWithUsDetails .connectWithUsData form textarea {
+    border: 0.5px solid #707070;
+    color: #707070;
+    font-size: 18px;
+    outline: none;
+    border-radius: 7px;
+}
+
+.connectWithUsDetails .connectWithUsData form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.connectWithUsDetails .connectWithUsData form input::placeholder,
+.connectWithUsDetails .connectWithUsData form textarea::placeholder {
+    color: #707070;
+}
+
+.connectWithUsDetails .connectWithUsData form .labelHeader {
+    font-size: 20px;
+    font-weight: 600;
+    color: #707070;
+}
+
+.connectWithUsDetails .connectWithUsData form .radioBtnsSec {
+    padding: 10px 0;
+}
+
+.connectWithUsDetails .connectWithUsData form .radioBtnsSec label {
+    display: block;
+    position: relative;
+    color: #707070;
+    margin: 0 30px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.connectWithUsDetails .connectWithUsData form .radioBtnsSec label:first-child {
+    margin: 0;
+}
+
+.connectWithUsDetails .connectWithUsData form .radioBtnsSec input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.connectWithUsDetails .connectWithUsData form .radioBtnsSec .checkmark {
+    position: absolute;
+    top: 30%;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border: 3px solid #16acaa;
+    border-radius: 50%;
+}
+
+.connectWithUsDetails .connectWithUsData form .radioBtnsSec input:checked ~ .checkmark {
+    background-color: #16acaa;
+}
+
+.connectWithUsDetails .connectWithUsData .connectImg {
+    padding: 30px 0 0;
+}
+
+.connectWithUsDetails .connectWithUsData .connectImg img {
+    height: 450px;
+    width: 450px;
+}
+
+.connectWithUsDetails .connectWithUsData .btnContainer button {
+    background: #16acaa;
+    color: #fff;
+    padding: 10px 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.connectWithUsDetails .connectWithUsData .btnContainer button:hover {
+    padding: 10px 60px;
+    box-shadow: 0 0 10px #16acaa;
+}
+/* ============== End connectWithUsDetails =============== */
+/* ################### End connect_with_us Page ################### */
+
+
+/* ################### Start cylinders_Test Page ################### */
+/* ============== Start cylindersTestDetails =============== */
+.cylindersTestDetails {
+    padding: 60px 0;
+}
+
+.cylindersTestDetails .cylindersTestImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.cylindersTestDetails .cylindersTestDetailsHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+}
+
+.cylindersTestDetails .cylindersTestDetailsHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.cylindersTestDetails p {
+    color: #707070;
+    font-size: 20px;
+    margin: 0 10px 0;
+    padding-top: 5px;
+}
+
+.cylindersTestDetails .cylindersTestImg img {
+    height: 335px;
+}
+/* ============== End cylindersTestDetails =============== */
+/* ============== Start cylindersTestGallary =============== */
+.cylindersTestGallary {
+    padding: 40px 0;
+}
+
+.cylindersTestGallary .allGallaryImages img {
+    height: 100%;
+    width: 100%;
+}
+
+.cylindersTestGallary .allGallaryImages .firstSectionTop,
+.cylindersTestGallary .allGallaryImages .secondSectionTop,
+.cylindersTestGallary .allGallaryImages .thirdSectionTop {
+    height: 550px;
+}
+
+.cylindersTestGallary .allGallaryImages .firstSectionTop,
+.cylindersTestGallary .allGallaryImages .secondSectionTop,
+.cylindersTestGallary .allGallaryImages .thirdSectionTop,
+.cylindersTestGallary .allGallaryImages .firstSectionBottom,
+.cylindersTestGallary .allGallaryImages .secondSectionBottom {
+    padding: 8px !important;
+}
+
+.cylindersTestGallary .allGallaryImages .secondSectionTop div {
+    height: 258px !important;
+}
+
+.cylindersTestGallary .allGallaryImages .secondSectionTop div img {
+    height: 100%;
+    width: 100%;
+}
+
+.cylindersTestGallary .allGallaryImages .firstSectionBottom,
+.cylindersTestGallary .allGallaryImages .secondSectionBottom {
+    height: 320px;
+}
+/* ============== End cylindersTestGallary =============== */
+/* ============== Start certificateSection =============== */
+.certificateSection {
+    padding: 30px 0 60px;
+}
+
+.certificateSection .certificateSectionHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+}
+
+.certificateSection .certificateSectionHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.certificateSection .certificateSlider {
+    padding-top: 20px;
+}
+
+.certificateSection .certificateSlider .slick-next,
+.certificateSection .certificateSlider .slick-prev {
+    border-radius: 50%; 
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.certificateSection .certificateSlider .slick-next {
+    right: -5%;
+}
+.certificateSection .certificateSlider .slick-prev {
+    left: -5%;
+}
+
+.certificateSection .certificateSlider .slick-next::before {
+    color: #ffffff;
+    content: "\f054";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.certificateSection .certificateSlider .slick-prev:before {
+    color: #ffffff;
+    content: "\f053";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.certificateSection .certificateSlider .itemSection {
+    padding: 30px;
+}
+
+.certificateSection .certificateSlider .itemSection img {
+    height: 100%;
+    width: 100%;
+    border: 8px solid #16acaa;
+    transition: 0.3s ease-in-out;
+}
+
+.certificateSection .certificateSlider .itemSection.slick-center img {
+    transform: scale(1.2,1.2);
+}
+/* ============== End certificateSection =============== */
+/* ################### End cylinders_Test Page ################### */
+
+
+/* ################### End news Page ################### */
+/* ============== Start newestNews & oldNews & oldestNews =============== */
+.allNewsInPage {
+    padding: 60px 0;
+}
+
+.newestNews,
+.oldNews,
+.oldestNews {
+    padding: 40px 0;
+}
+
+.newestNews .newestNewsSlider .sliderSection,
+.oldNews .oldNewsSlider .sliderSection,
+.oldestNews .oldestNewsSlider .sliderSection {
+    background: #f5f5f5;
+    padding: 30px 20px 10px;
+    margin: 0 10px;
+}
+
+.newestNews .newestNewsSlider .sliderSection .newsYear span,
+.oldNews .oldNewsSlider .sliderSection .newsYear span,
+.oldestNews .oldestNewsSlider .sliderSection .newsYear span {
+    color: #fff;
+    padding: 0px 20px;
+}
+
+.newestNews .newestNewsSlider .sliderSection .newsYear span {
+    background: #ed3239;
+}
+
+.oldNews .oldNewsSlider .sliderSection .newsYear span {
+    background: #16ac70;
+}
+
+.oldestNews .oldestNewsSlider .sliderSection .newsYear span {
+    background: #dfd813;
+}
+
+.newestNews .newestNewsSlider .sliderSection .newsHeader,
+.oldNews .oldNewsSlider .sliderSection .newsHeader,
+.oldestNews .oldestNewsSlider .sliderSection .newsHeader {
+    padding: 20px 0;
+}
+
+.newestNews .newestNewsSlider .sliderSection .newsHeader h2,
+.oldNews .oldNewsSlider .sliderSection .newsHeader h2,
+.oldestNews .oldestNewsSlider .sliderSection .newsHeader h2 {
+    color: #444;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.newestNews .newestNewsSlider .sliderSection .newsImg,
+.oldNews .oldNewsSlider .sliderSection .newsImg,
+.oldestNews .oldestNewsSlider .sliderSection .newsImg {
+    height: 200px;
+}
+
+.newestNews .newestNewsSlider .sliderSection img,
+.oldNews .oldNewsSlider .sliderSection img,
+.oldestNews .oldestNewsSlider .sliderSection img {
+    height: 100%;
+}
+
+.newestNews .newestNewsSlider .newsArticle,
+.oldNews .oldNewsSlider .newsArticle,
+.oldestNews .oldestNewsSlider .newsArticle {
+    padding: 20px 0;
+}
+
+.newestNews .newestNewsSlider .newsArticle p,
+.oldNews .oldNewsSlider .newsArticle p,
+.oldestNews .oldestNewsSlider .newsArticle p {
+    color: #707070;
+    font-size: 18px;
+    margin: 0;
+}
+
+.newestNews .newestNewsSlider .newsDate,
+.oldNews .oldNewsSlider .newsDate,
+.oldestNews .oldestNewsSlider .newsDate {
+    color: #929292;
+}
+
+.newestNews .newestNewsSlider .newsDate span,
+.oldNews .oldNewsSlider .newsDate span,
+.oldestNews .oldestNewsSlider .newsDate span {
+    margin: 0 7px;
+}
+
+.newestNews .newestNewsSlider .slick-next,
+.oldNews .oldNewsSlider .slick-next,
+.oldestNews .oldestNewsSlider .slick-next {
+    right: -3%;
+}
+
+.newestNews .newestNewsSlider .slick-prev,
+.oldNews .oldNewsSlider .slick-prev,
+.oldestNews .oldestNewsSlider .slick-prev {
+    left: -3%;
+}
+
+.newestNews .newestNewsSlider .slick-next,
+.newestNews .newestNewsSlider .slick-prev,
+.oldNews .oldNewsSlider .slick-next,
+.oldNews .oldNewsSlider .slick-prev,
+.oldestNews .oldestNewsSlider .slick-next,
+.oldestNews .oldestNewsSlider .slick-prev {
+    background: #16acaa;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.newestNews .newestNewsSlider .slick-next::before,
+.oldNews .oldNewsSlider .slick-next::before,
+.oldestNews .oldestNewsSlider .slick-next::before {
+    color: #fff;
+    content: "\f054";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.newestNews .newestNewsSlider .slick-prev:before,
+.oldNews .oldNewsSlider .slick-prev:before,
+.oldestNews .oldestNewsSlider .slick-prev:before {
+    color: #fff;
+    content: "\f053";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600;
+    font-size: 17px;
+}
+/* ============== End newestNews & oldNews & oldestNews =============== */
+/* ################### End news Page ################### */
+
+
+/* ################### Start Error Page ################### */
+/* ============== Start errorPageMessage =============== */
+.errorPageMessage {
+    padding: 60px 0;
+}
+
+.errorPageMessage .errorContent p {
+    color: #16acaa !important;
+    font-size: 25px;
+    padding: 30px 0;
+}
+
+.errorPageMessage .errorContent a {
+    color: #16acaa;
+    border: 2px solid #16acaa;
+    text-decoration: none;
+    padding: 10px 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.errorPageMessage .errorContent a:hover {
+    box-shadow: 0 0 20px #16acaa;
+    padding: 10px 70px;
+}
+/* ============== End errorPageMessage =============== */
+/* ################### End Error Page ################### */
+
+
+/* ################### Start hsse Page ################### */
+/* ============== Start aboutHsse =============== */
+.aboutHsse {
+    padding: 60px 0;
+}
+
+.aboutHsse .aboutHsseImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.aboutHsse .aboutHsseHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+}
+
+.aboutHsse .aboutHsseHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.aboutHsse p {
+    color: #707070;
+    font-size: 20px;
+    margin: 0 10px 10px;
+    padding-top: 5px;
+}
+
+.aboutHsse .aboutHsseImg img {
+    height: 450px;
+}
+/* ============== End aboutHsse =============== */
+/* ============== Start safetyConditions =============== */
+.safetyConditions {
+    padding-bottom: 50px;
+}
+
+.safetyConditions .safetyConditionsHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.safetyConditions .safetyConditionsHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.safetyConditions .conditionSections {
+    margin-bottom: 20px;
+}
+
+.safetyConditions .conditionSections p {
+    color: #707070;
+    font-size: 22px;
+    line-height: 33px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.safetyConditions .conditionSections span {
+    color: #000;
+    font-size: 22px;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 900;
+    background: #f5f5f5;
+}
+
+.safetyConditions .safetyConditionsImg img {
+    height: 400px;
+    width: 100%;
+}
+/* ============== End safetyConditions =============== */
+/* ################### End hsse Page ################### */
+
+
+/* ################### Start briefAboutCompany Page ################### */
+/* ============== Start aboutOurCompany =============== */
+.aboutOurCompany {
+    /* padding: 70px 0; */
+    padding: 60px 0;
+}
+
+.aboutOurCompany .aboutOurCompanyHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+}
+
+.aboutOurCompany .aboutOurCompanyHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.aboutOurCompany .aboutOurCompanyContent p {
+    color: #707070;
+    font-size: 22px;
+    line-height: 33px;
+    padding: 0 10px;
+}
+
+.aboutOurCompany .aboutOurCompanyContent p:last-child {
+    margin: 0;
+}
+
+.aboutOurCompany .aboutOurCompanyImg {
+    padding: 0;
+    position: relative;
+}
+
+.aboutOurCompany .aboutOurCompanyImg img {
+    width: 350px;
+    height: 250px;
+}
+
+.aboutOurCompany .aboutOurCompanyImg img:nth-child(2){
+    position: absolute;
+    top: 180px;
+    width: 200px;
+    height: 150px;
+    animation: smallImgAnimation 3s infinite alternate;
+    transition: 0.3s linear;
+    border: 5px solid #fff;
+}
+/* ============== End aboutOurCompany =============== */
+/* ============== Start ourVision =============== */
+.ourVision {
+    padding: 80px 0;
+    position: relative;
+    background: #16acaa;
+}
+
+.ourVision .ourVisionTextAll .ourVisionHeader {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+}
+
+.ourVision .ourVisionTextAll .ourVisionHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.ourVision .ourVisionContent p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 33px;
+    padding: 0 10px;
+}
+
+.ourVision .imageSide {
+    top: 0;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    background-image: url('../images/carInNature_Brief.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/* ============== End ourVision =============== */
+/* ============== Start ourGoal =============== */
+.ourGoal {
+    padding: 80px 0;
+    position: relative;
+    background: #ececec;
+}
+
+.ourGoal .ourGoalTextAll .ourGoalHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+}
+
+.ourGoal .ourGoalTextAll .ourGoalHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.ourGoal .ourGoalContent p {
+    color: #16acaa;
+    font-size: 20px;
+    line-height: 33px;
+    padding: 0 10px;
+}
+
+.ourGoal .imageSide {
+    top: 0;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    background-image: url('../images/carInForest_Brief.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/* ============== End ourGoal =============== */
+/* ============== Start ourValues =============== */
+.ourValues {
+    padding: 60px 0 90px;
+}
+
+.ourValues .ourValuesHeader h2 {
+    font-size: 22px;
+    color: #16acaa;
+    position: relative;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.ourValues .ourValuesHeader h2::after {
+    position: absolute;
+    content: '';
+    background: #ed3239;
+    height: 3px;
+    top: 100%;
+    left: 48.5%;
+    width: 30px;
+}
+
+.ourValues .ourAllValues {
+    padding-top: 40px;
+}
+
+.ourValues .ourAllValues .valueSection {
+    height: 370px;
+    width: 300px !important;
+    box-shadow: 0px 3px 5px #16acaa;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    position: relative;
+}
+
+.ourValues .ourAllValues .valueSection .valueSectionContent {
+    position: absolute;
+    content: '';
+    background: #16acaad0;
+    bottom: 0;
+    padding: 20px;
+}
+
+.ourValues .ourAllValues .valueSection .valueSectionContent p {
+    color: #fff;
+    font-size: 20px;
+}
+/* ============== End ourValues =============== */
+/* ################### End briefAboutCompany Page ################### */
+
+
+/* ################### Start vehicles_converting Page ################### */
+/* ============== Start aboutVehiclesConverting =============== */
+.aboutVehiclesConverting {
+    padding: 60px 0;
+}
+
+.aboutVehiclesConverting .aboutVehiclesConvertingHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.aboutVehiclesConverting .aboutVehiclesConvertingHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.aboutVehiclesConverting .aboutVehiclesConvertingContent p {
+    color: #707070;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 7px;
+}
+
+.aboutVehiclesConverting .aboutVehiclesConvertingImgVideo {
+    position: relative;
+}
+
+.aboutVehiclesConverting .aboutVehiclesConvertingImgVideo img {
+    width: 100%;
+    height: 350px;
+}
+
+.aboutVehiclesConverting .aboutVehiclesConvertingImgVideo .playIconVideo {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+}
+/* ============== End aboutVehiclesConverting =============== */
+/* ============== Start BenefitsConvertingVehicles =============== */
+.BenefitsConvertingVehicles {
+    padding: 20px 0;
+}
+
+.BenefitsConvertingVehicles .BenefitsConvertingVehiclesHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.BenefitsConvertingVehicles .BenefitsConvertingVehiclesHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.BenefitsConvertingVehicles .benefitSections {
+    margin-bottom: 20px;
+}
+
+.BenefitsConvertingVehicles .benefitSections p {
+    color: #707070;
+    font-size: 22px;
+    line-height: 33px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.BenefitsConvertingVehicles .benefitSections span {
+    color: #000;
+    font-size: 22px;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 900;
+    background: #f5f5f5;
+}
+
+.BenefitsConvertingVehicles .BenefitsConvertingVehiclesImg img {
+    height: 420px;
+    width: 100%;
+}
+/* ============== End BenefitsConvertingVehicles =============== */
+/* ============== Start convertingMaps =============== */
+.convertingMaps {
+    padding: 40px 0;
+}
+
+.convertingMaps #convertingMaps_Section_2 {
+    display: none;
+}
+
+.convertingMaps .convertingMapsHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.convertingMaps .convertingMapsHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}  
+
+.convertingMaps .convertingMaps_Section .convertingMaps_Section_Tabs .nav-pills {
+    flex-flow: column;
+}
+
+.convertingMaps .convertingMaps_Section .convertingMaps_Section_Tabs .nav-pills a {
+    color: #707070;
+    background: #d3d3d3;
+    font-size: 18px;
+    margin: 5px 0;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+.convertingMaps .convertingMaps_Section .convertingMaps_Section_Tabs .nav-pills a.main_tab {
+    color: #fff;
+    background: #16acaa;
+}
+
+.convertingMaps .convertingMaps_Section .convertingMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.convertingMaps .convertingMaps_Section .convertingMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after { 
+    position: absolute;
+    content: '';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f104";
+    font-size: 18px;
+    top: 12px;
+    color: #707070;
+}
+
+.convertingMaps .convertingMaps_Section .convertingMaps_Section_Tabs .nav-pills a:first-child {
+    margin-top: 0;
+}
+
+.convertingMaps .convertingMaps_Section .convertingMaps_Section_Tabs .nav-pills a:last-child {
+    margin-bottom: 0;
+}
+
+.convertingMaps .convertingMaps_Section .convertingMaps_Section_Content {
+    background: #d3d3d3;
+    padding: 0;
+    position: relative;
+    border-radius: 20px;
+    display: flex; 
+}
+
+.convertingMaps .convertingMaps_Section .convertingMaps_Section_Content iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 20px
+}
+/* ============== End convertingMaps =============== */
+/* =============== Start the section control of convertingMaps =============== */
+.convertingMaps_control .change_sections {
+    width: auto;
+    padding: 0 70px;
+    margin-bottom: 40px;
+}
+
+.convertingMaps_control .change_sections .change_tab_item {
+    color: #707070;
+    font-size: 18px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.convertingMaps_control .change_sections .change_tab_item.active {
+    font-weight: 700;
+}
+
+.convertingMaps_control .change_sections i {
+    color: #ed3239;
+    font-size: 18px;
+    padding: 5px 20px;
+}
+/* =============== End the section control of convertingMaps =============== */
+/* ################### End vehicles_converting Page ################### */
+
+
+/* ################### Start cng_stations Page ################### */
+/* ============== Start aboutCngStations =============== */
+.aboutCngStations {
+    padding: 60px 0 0;
+}
+
+.aboutCngStations .aboutCngStationsHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.aboutCngStations .aboutCngStationsHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.aboutCngStations .aboutCngStationsContent p {
+    color: #707070;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 7px;
+    padding: 0 10px;
+}
+/* ============== End aboutVehiclesConverting =============== */
+/* ============== Start cngStationsMaps =============== */
+.cngStationsMaps {
+    /* padding: 40px 0 20px; */
+    padding: 40px 0;
+}
+
+.cngStationsMaps #cngStationsMaps_Section_2 {
+    display: none;
+}
+
+.cngStationsMaps .cngStationsMapsHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.cngStationsMaps .cngStationsMapsHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}  
+
+.cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Tabs .nav-pills {
+    flex-flow: column;
+}
+
+.cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Tabs .nav-pills a {
+    color: #707070;
+    background: #d3d3d3;
+    font-size: 18px;
+    margin: 5px 0;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+.cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Tabs .nav-pills a.main_tab {
+    color: #fff;
+    background: #16acaa;
+}
+
+.cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after { 
+    position: absolute;
+    content: '';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f104";
+    font-size: 18px;
+    top: 12px;
+    color: #707070;
+}
+
+.cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Tabs .nav-pills a:first-child {
+    margin-top: 0;
+}
+
+.cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Tabs .nav-pills a:last-child {
+    margin-bottom: 0;
+}
+
+.cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Content {
+    background: #d3d3d3;
+    padding: 0;
+    position: relative;
+    border-radius: 20px;
+    display: flex; 
+}
+
+.cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Content iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 20px
+}
+/* ============== End cngStationsMaps =============== */
+/* =============== Start the section control of cngStationsMaps =============== */
+.cngStationsMaps_control .change_sections {
+    width: auto;
+    padding: 0 70px;
+    margin-bottom: 40px;
+}
+
+.cngStationsMaps_control .change_sections .change_tab_item {
+    color: #707070;
+    font-size: 18px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.cngStationsMaps_control .change_sections .change_tab_item.active {
+    font-weight: 700;
+}
+
+.cngStationsMaps_control .change_sections i {
+    color: #ed3239;
+    font-size: 18px;
+    padding: 5px 20px;
+}
+/* =============== End the section control of cngStationsMaps =============== */
+/* ============== Start ourAdvantages =============== */
+.ourAdvantages {
+    padding: 30px 0;
+    background: #16acaa;
+}
+
+.ourAdvantages .ourAdvantagesHeader {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.ourAdvantages .ourAdvantagesHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.ourAdvantages .ourAdvantagesSlider .ourAdvantagesSection {
+    cursor: pointer;
+}
+
+.ourAdvantages .ourAdvantagesSlider .slick-next,
+.ourAdvantages .ourAdvantagesSlider .slick-prev {
+    background: #16acaa;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ourAdvantages .ourAdvantagesSlider .slick-next::before {
+    color: #fff;
+    content: "\f054";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.ourAdvantages .ourAdvantagesSlider .slick-prev:before {
+    color: #fff;
+    content: "\f053";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.ourAdvantages .ourAdvantagesSlider {
+    padding: 20px;
+}
+
+.ourAdvantages .ourAdvantagesSlider .ourAvantagesImg img {
+    width: 320px;
+    height: 300px;
+}
+
+.ourAdvantages .ourAdvantagesSlider .ourAvantagesArticle {
+    padding: 10px 25px 0;
+} 
+
+.ourAdvantages .ourAdvantagesSlider .ourAvantagesArticle p {
+    color: #fff !important;
+    font-size: 18px;
+    margin: 0;
+}
+/* ============== End ourAdvantages =============== */
+/* ============== Start whyOurClientsChooseUs =============== */
+.whyOurClientsChooseUs {
+    padding: 80px 0;
+}
+
+.whyOurClientsChooseUs .whyOurClientsChooseUsHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.whyOurClientsChooseUs .whyOurClientsChooseUsHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.whyOurClientsChooseUs .chooseSections {
+    margin-bottom: 20px;
+}
+
+.whyOurClientsChooseUs .chooseSections:last-child {
+    margin: 0;
+}
+
+.whyOurClientsChooseUs .chooseSections p {
+    color: #707070;
+    font-size: 20px;
+    line-height: 33px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.whyOurClientsChooseUs .chooseSections span {
+    color: #000;
+    font-size: 22px;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 900;
+    background: #f5f5f5;
+}
+
+.whyOurClientsChooseUs .whyOurClientsChooseUsImg img {
+    height: 560px;
+    width: 100%;
+}
+/* ============== End whyOurClientsChooseUs =============== */
+/* ################### End cng_stations Page ################### */
+
+
+/* ################### End call_us Page ################### */
+/* ============== Start callUsDetails =============== */
+.callUsDetails {
+    padding: 60px 0;
+}
+
+.callUsDetails .callUsInfo .callUsInfoContent div span {
+    font-size: 18px;
+}
+
+.callUsDetails .callUsInfo .callUsInfoContent div:nth-child(2){
+    width: 35px;
+}
+
+.callUsDetails .callUsInfo .callUsInfoContent div:nth-child(2) i {
+    font-size: 25px;
+}
+
+.callUsDetails .callUsImg img {
+    height: 300px;
+    width: 100%;
+}
+/* ============== End callUsDetails =============== */
+/* ################### End call_us Page ################### */
+
+
+/* ################ Large devices (desktops, less than 1200px) ################ */
+@media (max-width: 1199.98px) {
+    /* ################### Start Global ################### */
+    /* ============== Start Navbar =============== */
+    .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 17px;
+    } 
+    
+    .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item {
+        color: #707070 !important;
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+    /* ============== End Navbar =============== */
+    /* ============== Start go_up icon =============== */
+    .go_up {
+        top: 90%; 
+    }
+    /* ============== End go_up icon =============== */ 
+    /* ============== Start InquiriesComplaints =============== */
+    .InquiriesComplaints .InquiriesComplaintsContent p {
+        font-size: 17px;
+    }
+
+    .InquiriesComplaints .InquiriesComplaintsBtns {
+        padding: 40px 0 15px;
+    }
+
+    .InquiriesComplaints .InquiriesComplaintsBtns a {
+        padding: 10px 30px;
+    }
+    /* ============== End InquiriesComplaints =============== */
+    /* ============== Start footer =============== */
+    footer .footerSections .footerSection h2 {
+        font-size: 20px;
+    }
+
+    footer .footerSections .footerSection p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    footer .footerSections .footerSection .contactData {
+        margin-top: 10px;
+    }
+
+    footer .footerSections .footerSection {
+        padding: 0 10px;
+    }
+
+    footer .footerCopyRights p {
+        font-size: 17px;
+    }
+
+    footer .footerSections {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    footer .contactData {
+        padding: 0 10px !important;
+    }
+    /* ============== End footer =============== */
+    /* ################### End Global ################### */
+
+
+    /* ################### Start index Page ################### */
+    /* ============== Start sliderAboutCompany =============== */
+    .sliderAboutCompany {
+        padding: 140px 0;
+    }
+
+    .sliderAboutCompany .backCurve {
+        width: 330px;
+    }
+    /* ============== End sliderAboutCompany =============== */
+    /* ============== Start ourServices =============== */
+    .ourServices .ourServicesSlider {
+        padding: 30px 0 0;
+    }
+
+    .ourServices .ourServicesSlider .ourServicesSection {
+        margin: 0 10px;
+    }
+    /* ============== End ourServices =============== */
+    /* ============== Start gasOffers =============== */
+    .gasOffers {
+        padding: 80px 0;
+    }
+
+    .gasOffers .totalGasOffers img {
+        height: 280px;
+    }
+    /* ============== End gasOffers =============== */
+    /* ============== Start transferOffers =============== */
+    .transferOffers .transferOffersSlider .transferOffersSection {
+        margin: 0 10px;
+    }
+
+    .transferOffers .transferOffersSlider .transferOffersSection .transferOffersSectionContent {
+        padding-top: 80px;
+    }
+    /* ============== End transferOffers =============== */
+    /* ============== Start latestNews =============== */
+    .latestNews .latestNewsSlider .latestNewsSection {
+        margin: 0 10px;
+    }
+
+    .latestNews .latestNewsSlider .latestNewsSection .latestNewsSectionContent {
+        padding: 60px 20px 0;
+    }
+
+    .latestNews .latestNewsSlider .slick-next {
+        right: 0%;
+    }
+
+    .latestNews .latestNewsSlider .slick-prev {
+        left: 0%;
+    }
+    /* ============== End latestNews =============== */
+
+    /* ============== Start ourPartners =============== */
+    .ourPartners {
+        padding: 55px 0;
+    }
+    /* ============== End ourPartners =============== */
+    /* ################### End index Page ################### */
+
+
+    /* ################### Start CNG Mobile Page ################### */
+    /* ============== Start aboutCngMobile =============== */
+    .aboutCngMobile .imgVideoContainer {
+        padding: 40px 0 20px;
+    }
+    /* ============== End aboutCngMobile =============== */
+    /* ============== Start GallaryWithVideo =============== */
+    .GallaryWithVideo {
+        padding: 0 0 50px;
+        position: relative;
+    }
+
+    .GallaryWithVideo .GallarySlider {
+        margin-top: -110px;
+    }
+
+    .GallaryWithVideo .GallarySlider .slick-next{
+        right: -15px;
+    }
+
+    .GallaryWithVideo .GallarySlider .slick-prev {
+        left: -15px;
+    }
+
+    .GallaryWithVideo .imgVideoContainer {
+        padding: 5px 0 20px;
+    }
+
+    .GallaryWithVideo .GallarySlider img {
+        width: 270px;
+        height: 270px;
+    }
+    /* ============== End GallaryWithVideo =============== */
+    /* ################### End CNG Mobile Page ################### */
+
+    
+    /* ################### Start connect_with_us Page ################### */
+    /* ============== Start connectWithUsDetails =============== */
+    .connectWithUsDetails .connectWithUsData .connectImg {
+        padding: 30px 20px 0;
+    }
+
+    .connectWithUsDetails .connectWithUsData .connectImg img {
+        height: 430px;
+        width: 100%; 
+    }
+    /* ============== End connectWithUsDetails =============== */
+    /* ################### End connect_with_us Page ################### */
+
+
+    /* ################### Start OurClients Page ################### */
+    /* ============== Start ourClientsInfo =============== */
+    .ourClientsInfo .clientSection img {
+        height: 230px;
+        width: 230px;
+    }
+    /* ============== End ourClientsInfo =============== */
+    /* ################### End OurClients Page ################### */
+
+
+    /* ################### Start cylinders_Test Page ################### */
+    /* ============== Start cylindersTestGallary =============== */
+    .cylindersTestGallary {
+        padding: 30px 0;
+    }
+    /* ============== End cylindersTestGallary =============== */
+    /* ============== Start certificateSection =============== */
+    .certificateSection .certificateSlider .itemSection {
+        padding: 20px;
+    }
+    /* ============== End certificateSection =============== */
+    /* ################### End cylinders_Test Page ################### */
+
+
+    /* ################### End news Page ################### */
+    /* ============== Start newestNews & oldNews & oldestNews =============== */
+    .allNewsInPage {
+        padding: 40px 0;
+    }
+
+    .newestNews .newestNewsSlider .slick-next,
+    .oldNews .oldNewsSlider .slick-next,
+    .oldestNews .oldestNewsSlider .slick-next {
+        right: -2%;
+    }
+
+    .newestNews .newestNewsSlider .slick-prev,
+    .oldNews .oldNewsSlider .slick-prev,
+    .oldestNews .oldestNewsSlider .slick-prev {
+        left: -2%;
+    }
+    /* ============== End newestNews & oldNews & oldestNews =============== */
+    /* ################### End news Page ################### */
+
+
+    /* ################### Start hsse Page ################### */
+    /* ============== Start aboutHsse =============== */
+    .aboutHsse .aboutHsseImg img {
+        height: 400px;
+    }
+    /* ============== End aboutHsse =============== */
+    /* ============== Start safetyConditions =============== */
+    .safetyConditions {
+        padding-bottom: 40px;
+    }
+
+    .safetyConditions .conditionSections p {
+        font-size: 20px;
+    }
+
+    .safetyConditions .conditionSections span {
+        font-size: 20px;
+    }
+
+    .safetyConditions .safetyConditionsImg img {
+        height: 400px;
+        width: 100%;
+    }
+    /* ============== End safetyConditions =============== */
+    /* ################### End hsse Page ################### */
+
+
+    /* ################### End briefAboutCompany Page ################### */
+    /* ============== Start aboutOurCompany =============== */
+    .aboutOurCompany {
+        padding: 60px 0;
+    }
+    /* ============== End aboutOurCompany =============== */
+    /* ============== Start ourVision =============== */
+    .ourVision {
+        padding: 60px 0;
+    }
+    /* ============== End ourVision =============== */
+    /* ============== Start ourGoal =============== */
+    .ourGoal {
+        padding: 60px 0;
+    }
+    /* ============== End ourGoal =============== */
+    /* ################### End briefAboutCompany Page ################### */
+
+
+    /* ################### Start aboutVehiclesConverting Page ################### */
+    /* ============== Start BenefitsConvertingVehicles =============== */
+    .BenefitsConvertingVehicles {
+        padding: 20px;
+    }
+
+    .BenefitsConvertingVehicles .benefitSections p {
+        font-size: 20px;
+    }
+
+    .BenefitsConvertingVehicles .benefitSections span {
+        font-size: 20px;
+    }
+
+    .BenefitsConvertingVehicles .BenefitsConvertingVehiclesImg img {
+        height: 400px;
+        width: 100%;
+    }
+    /* ============== End BenefitsConvertingVehicles =============== */
+    /* ============== Start convertingMaps =============== */
+    /* .convertingMaps {
+        padding: 20px 0;
+    } */
+
+    .convertingMaps .convertingMapsHeader {
+        margin-bottom: 30px;
+    }
+    /* ============== End convertingMaps =============== */
+    /* ################### End aboutVehiclesConverting Page ################### */
+
+
+    /* ################### Start cng_stations Page ################### */
+    /* ============== Start aboutCngStations =============== */
+    .aboutCngStations {
+        padding: 60px 0 0;
+    }
+
+    .aboutCngStations .aboutCngStationsHeader {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    /* ============== End aboutVehiclesConverting =============== */
+    /* ============== Start ourAdvantages =============== */
+    .ourAdvantages .ourAdvantagesSlider .ourAvantagesImg img {
+        width: 270px;
+        height: 270px;
+    }
+
+    .ourAdvantages .ourAdvantagesSlider .ourAvantagesArticle {
+        padding: 8px 20px 0;
+    } 
+    /* ============== End ourAdvantages =============== */
+    /* ============== Start whyOurClientsChooseUs =============== */
+    .whyOurClientsChooseUs {
+        padding: 60px 0;
+    }
+    /* ============== End whyOurClientsChooseUs =============== */
+    /* ################### End cng_stations Page ################### */
+}
+
+
+/* ################ Medium devices (tablets, less than 992px) ################ */
+@media (max-width: 991.98px) {
+    /* ################### Start Global ################### */
+    /* ============== Start Navbar =============== */
+    .navbar {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .navbar .navbar-brand {
+        margin: 0px;
+    }
+
+    .navbar .navbar-toggler {
+        background: #fff;   
+        border: 2px solid #16acaa;
+        outline: none;
+    }
+
+    .navbar .navbarMenu {
+        position: relative;
+        display: flex;
+    }
+
+    .navbar .navbarMenu::after {
+        position: absolute;
+        content: "\f0c9";
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 600; 
+        color: #16acaa !important;
+    }
+
+    .navbar .navbar-toggler:hover {
+        border-color: #ed3239;
+    }
+
+    .navbar .navbar-toggler:hover .navbarMenu::after {
+        color: #ed3239 !important;
+    }
+
+    .navbar .navbar-collapse {
+        padding: 5px 20px 10px 20px;
+    }
+
+    .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+        padding: 2px 0;
+    }
+
+    .navbar .navbar-nav .dropdown .dropdown-menu {
+        left: 0%;
+        padding: 5px 10px;
+        margin-top: 0px;
+        text-align: center;
+        border: none;
+        border-radius: 0;
+    }
+    
+    .navbar .navbar-nav .dropdown .dropdown-menu::after {
+        top: 7%;
+        border-top: 0.7em solid;
+        border-bottom: 0;
+    }
+    /* ============== End Navbar =============== */
+    /* ============== Start InquiriesComplaints =============== */
+    .InquiriesComplaints {
+        padding: 30px 0;
+        margin-bottom: 7px;
+    }
+
+    .InquiriesComplaints .InquiriesComplaintsContent h2 {
+        font-size: 25px;
+    }
+
+    .InquiriesComplaints .InquiriesComplaintsContent p {
+        font-size: 17px;
+    }
+
+    .InquiriesComplaints .InquiriesComplaintsBtns {
+        padding: 40px 0 15px;
+    }
+
+    .InquiriesComplaints .InquiriesComplaintsBtns a {
+        padding: 10px 30px;
+    }
+    /* ============== End InquiriesComplaints =============== */
+    /* ============== Start footer =============== */
+    footer {
+        padding: 30px 20px;
+    }
+
+    footer .footerSections {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    footer .footerSections .footerSection {
+        margin-bottom: 20px;
+    }
+    /* ============== End footer =============== */
+    /* ============== Start pageHeader =============== */
+    .pageHeader {
+        margin-top: 85px;
+    }
+    /* ============== End pageHeader =============== */
+    /* ============== Start go_up =============== */
+    .go_up {
+        top: 92%;
+        font-size: 17px;
+        padding: 13px 10px;
+    }
+    /* ============== End go_up =============== */   
+    /* ################### End Global ################### */
+
+
+    /* ################### Start index Page ################### */
+    /* ============== Start Main =============== */
+    main h1 {
+        font-size: 30px;
+        padding: 0 60px;
+        text-align: center;
+    }
+    /* ============== End Main =============== */
+    /* ============== Start mainBranches =============== */
+    .mainBranches .totalMainBranches .branchSection {
+        padding: 10px 15px;
+    }
+
+    .mainBranches .totalMainBranches {
+        padding: 10px 0;
+        flex-wrap: wrap;
+    }
+
+    .mainBranches .totalMainBranches .branchSection .branchImg {
+        height: 60px;
+        width: 60px;
+    }
+
+    .mainBranches .totalMainBranches .branchSection h2 {
+        font-size: 18px;
+    }
+
+    .mainBranches .totalMainBranches .branchSection p {
+        font-size: 16px;
+        padding: 0;
+    }
+    /* ============== End mainBranches =============== */
+    /* ============== Start sliderAboutCompany =============== */
+    .sliderAboutCompany {
+        padding: 100px 0;
+    }
+
+    .sliderAboutCompany .backCurve {
+        height: 270px;
+        width: 270px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection {
+        padding: 10px 0;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .slick-dots {
+        top: -35%;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData h2 {
+        font-size: 27px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData p {
+        font-size: 18px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData a {
+        padding: 4px 40px;
+        font-size: 16px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData a:hover {
+        padding: 4px 60px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderImage {
+        height: 230px !important;
+    }
+    /* ============== End sliderAboutCompany =============== */
+    /* ============== Start gasOffers =============== */
+    .gasOffers {
+        padding: 60px 0;
+    }
+
+    .gasOffers .totalGasOffers {
+        flex-flow: column;
+    }
+
+    .gasOffers .totalGasOffers .gasOffersImg {
+        padding: 20px 0;
+    }
+    /* ============== End gasOffers =============== */
+    /* ============== Start ourMaps =============== */
+    .ourMaps .ourMaps_Section {
+        justify-content: center !important;
+    }
+
+    .ourMaps .ourMaps_Section .ourMaps_Section_Content {
+        height: 400px;
+        margin: 10px;
+    }
+
+    .ourMaps .ourMaps_Section .ourMaps_Section_Tabs {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills {
+        flex-flow: row;
+        flex-wrap: wrap !important;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    .ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a {
+        font-size: 16px;
+        margin: 5px !important;
+    }
+
+    .ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after { 
+        font-size: 16px;
+    }
+    /* ============== End ourMaps =============== */
+    /* ============== Start latestNews =============== */
+    .latestNews .latestNewsSlider .slick-next {
+        right: 0%;
+        margin-top: 10px;
+    }
+
+    .latestNews .latestNewsSlider .slick-prev {
+        left: 0%;
+        margin-top: 10px;
+    }
+    /* ============== End latestNews =============== */
+    /* ============== Start ourPartners =============== */
+    .ourPartners {
+        padding: 50px 0;
+    }
+
+    .ourPartners .ourPartnersLinks a {
+        width: 90px;
+        height: 90px;
+    }
+
+    .ourPartners .ourPartnersLinks a:hover {
+        transform: scale(1.3,1.3);
+    }
+    /* ============== End ourPartners =============== */
+    /* ################### End index Page ################### */
+
+
+    /* ################### Start CNG Mobile Page ################### */
+    /* ============== Start aboutCngMobile =============== */
+    .aboutCngMobile .imgVideoContainer {
+        padding: 10px 0 0px;
+        margin: 0;
+    }
+
+    .aboutCngMobile .imgVideoContainer img {
+        width: 100%;
+        height: 100%;
+    }
+    /* ============== End aboutCngMobile =============== */
+    /* ============== Start transmissionMechanism =============== */
+    .transmissionMechanism {
+        padding: 60px 0 120px;
+    }
+    /* ============== End transmissionMechanism =============== */
+    /* ============== Start GallaryWithVideo =============== */
+    .GallaryWithVideo {
+        padding: 0 0 50px;
+        position: relative;
+    }
+
+    .GallaryWithVideo .GallarySlider {
+        margin-top: -110px;
+    }
+
+    .GallaryWithVideo .GallarySlider {
+        padding: 20px 40px;
+    } 
+
+    .GallaryWithVideo .GallarySlider img {
+        width: 280px;
+        height: 270px;
+    }
+
+    .GallaryWithVideo .imgVideoContainer {
+        padding: 5px 0 10px;
+    }
+    /* ============== End GallaryWithVideo =============== */
+    /* ################### End CNG Mobile Page ################### */
+
+
+    /* ################### Start OurParteners Page ################### */
+    /* ============== Start ourPartnersLogos =============== */
+    .ourPartnersLogos {
+        padding: 40px 0;
+    }
+
+    .ourPartnersLogos a img {
+        width: 170px;
+        height: 170px;
+    }
+    /* ============== End ourPartnersLogos =============== */
+    /* ################### End OurParteners Page ################### */
+
+
+    /* ################### Start OurClients Page ################### */
+    /* ============== Start ourClientsInfo =============== */
+    .ourClientsInfo {
+        padding: 40px 0;
+    }
+
+    .ourClientsInfo .clientSection {
+        padding: 30px 0;
+    }
+
+    .ourClientsInfo .clientSection img {
+        height: 180px;
+        width: 180px;
+    }
+
+    .ourClientsInfo .clientSection h2 {
+        font-size: 17px;
+    }
+    /* ============== End ourClientsInfo =============== */
+    /* ################### End OurClients Page ################### */
+
+
+    /* ################### Start jobs Page ################### */
+    /* ============== Start jobsDetails =============== */
+    .jobsDetails form {
+        padding: 40px 0 0;
+    }
+    /* ============== End jobsDetails =============== */
+    /* ################### End jobs Page ################### */
+
+
+    /* ################### Start connect_with_us Page ################### */
+    /* ============== Start connectWithUsDetails =============== */
+    .connectWithUsDetails {
+        padding: 50px 0 20px;
+    }
+
+    .connectWithUsDetails .connectWithUsData {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .connectWithUsDetails .connectWithUsData .connectImg {
+        padding: 30px 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .connectWithUsDetails .connectWithUsData .connectImg img {
+        height: 430px;
+        width: 500px;
+    }
+    /* ============== End connectWithUsDetails =============== */
+    /* ################### End connect_with_us Page ################### */
+
+
+    /* ################### Start cylinders_Test Page ################### */
+    /* ============== Start cylindersTestDetails =============== */
+    .cylindersTestDetails .cylindersTestImg {
+        margin-top: 20px;
+    }
+    /* ============== End cylindersTestDetails =============== */
+    /* ============== Start cylindersTestGallary =============== */
+    .cylindersTestGallary {
+        padding: 30px 0;
+    }
+
+    .cylindersTestGallary .allGallaryImages .thirdSectionTop {
+        height: 320px;
+    }
+    /* ============== End cylindersTestGallary =============== */
+    /* ============== Start certificateSection =============== */
+    .certificateSection .certificateSlider {
+        padding-top: 20px;
+    }
+
+    .certificateSection .certificateSlider .itemSection {
+        padding: 40px;
+    }
+
+    .certificateSection .certificateSlider .itemSection.slick-center img {
+        transform: scale(1.2,1.2);
+    } 
+    /* ============== End certificateSection =============== */
+    /* ################### End cylinders_Test Page ################### */
+
+
+    /* ################### Start hsse Page ################### */
+    /* ============== Start aboutHsse =============== */
+    .aboutHsse {
+        padding: 50px 0;
+    }
+
+    .aboutHsse .aboutHsseImg {
+        margin-top: 20px;
+    }
+
+    .aboutHsse .aboutHsseImg img {
+        height: 400px;
+    }
+    /* ============== End aboutHsse =============== */
+    /* ============== Start safetyConditions =============== */
+    .safetyConditions {
+        padding-bottom: 40px;
+    }
+
+    .safetyConditions .safetyConditionsAll {
+        flex-flow: column-reverse;
+    }
+
+    .safetyConditions .safetyConditionsHeader {
+        margin-bottom: 20px;
+    }
+
+    .safetyConditions .conditionSections p {
+        font-size: 20px;
+    }
+
+    .safetyConditions .conditionSections span {
+        font-size: 20px;
+    }
+
+    .safetyConditions .safetyConditionsImg {
+        margin-top: 20px;
+    }
+    /* ============== End safetyConditions =============== */
+    /* ################### End hsse Page ################### */
+
+
+    /* ################### End briefAboutCompany Page ################### */
+    /* ============== Start aboutOurCompany =============== */
+    .aboutOurCompany {
+        padding: 50px 0 30px;
+    }
+
+    .aboutOurCompany .aboutOurCompanyImg {
+        display: flex;
+        justify-content: center;
+        padding: 30px 0 20px;
+    }
+
+    .aboutOurCompany .aboutOurCompanyImg img:nth-child(2){
+        animation: smallImgAnimation 3s infinite alternate;
+    }
+    /* ============== End aboutOurCompany =============== */
+    /* ============== Start ourVision =============== */
+    .ourVision {
+        padding: 50px 0;
+    }
+
+    .ourVision .imageSide {
+        height: 260px;
+        width:100%;
+        margin-top: 10px;
+        position: relative;
+        border-radius: 15px;
+        z-index: 2;
+    }
+    /* ============== End ourVision =============== */
+    /* ============== Start ourGoal =============== */
+    .ourGoal {
+        padding: 50px 0;
+    }
+
+    .ourGoal .ourGoalTextAll {
+        padding: 0 15px !important;
+    }
+
+    .ourGoal .totalOurGoal {
+        display: flex;
+        flex-flow: column-reverse !important;
+    }
+
+    .ourGoal .imageSide {
+        height: 260px;
+        width:100%;
+        margin-top: 10px;
+        position: relative;
+        border-radius: 15px;
+        z-index: 2;
+    }
+    /* ============== End ourGoal =============== */
+    /* ============== Start ourValues =============== */
+    .ourValues {
+        padding: 60px 0 80px;
+    }
+
+    .ourValues .ourAllValues .valueSection {
+        height: 390px;
+        width: 320px !important;
+        margin-bottom: 30px;
+    }
+
+    .ourValues .ourAllValues .valueSection:last-child {
+        margin-bottom: 0;
+    }
+
+    .ourValues .ourValuesHeader h2::after {
+        left: 48%;
+    }
+    /* ============== End ourValues =============== */
+    /* ################### End briefAboutCompany Page ################### */
+
+
+    /* ################### Start aboutVehiclesConverting Page ################### */
+    /* ============== Start aboutVehiclesConverting =============== */
+    .aboutVehiclesConverting {
+        padding: 40px 0;
+    }
+
+    .aboutVehiclesConverting .aboutVehiclesConvertingImgVideo {
+        margin-top: 20px;
+    }
+    /* ============== End aboutVehiclesConverting =============== */
+    /* ============== Start BenefitsConvertingVehicles =============== */
+    .BenefitsConvertingVehicles {
+        padding-top: 0px;
+    }
+
+    .BenefitsConvertingVehicles .BenefitsConvertingVehiclesAll {
+        flex-flow: column-reverse;
+    }
+
+    .BenefitsConvertingVehicles .BenefitsConvertingVehiclesHeader {
+        margin-bottom: 20px;
+    }
+
+    .BenefitsConvertingVehicles .benefitSections p {
+        font-size: 20px;
+    }
+
+    .BenefitsConvertingVehicles .benefitSections span {
+        font-size: 20px;
+    }
+
+    .BenefitsConvertingVehicles .BenefitsConvertingVehiclesImg {
+        margin-top: 20px;
+    }
+    /* ============== End BenefitsConvertingVehicles =============== */
+    /* ============== Start convertingMaps =============== */
+    .convertingMaps {
+       padding: 30px 0;
+    }
+
+    .convertingMaps .convertingMaps_Section {
+        justify-content: center !important;
+    }
+
+    .convertingMaps .convertingMapsHeader {
+        margin-bottom: 10px;
+    }
+
+    .convertingMaps .convertingMaps_Section .convertingMaps_Section_Content {
+        height: 400px;
+        margin: 10px;
+    }
+
+    .convertingMaps .convertingMaps_Section .convertingMaps_Section_Tabs {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .convertingMaps .convertingMaps_Section .convertingMaps_Section_Tabs .nav-pills {
+        flex-flow: row;
+        flex-wrap: wrap !important;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    .convertingMaps .convertingMaps_Section .convertingMaps_Section_Tabs .nav-pills a {
+        font-size: 16px;
+        margin: 5px !important;
+    }
+
+    .convertingMaps .convertingMaps_Section .convertingMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after { 
+        font-size: 16px;
+    }
+    /* ============== End convertingMaps =============== */
+    /* ################### End aboutVehiclesConverting Page ################### */
+
+
+    /* ################### Start cng_stations Page ################### */
+    /* ============== Start aboutCngStations =============== */
+    .aboutCngStations {
+        padding: 50px 0 0;
+    }
+    /* ============== End aboutVehiclesConverting =============== */
+    /* ============== Start cngStationsMaps =============== */
+    .cngStationsMaps {
+        padding: 30px 0;
+    }
+    .cngStationsMaps .cngStationsMapsHeader {
+        margin-bottom: 10px;
+    }
+
+    .cngStationsMaps .cngStationsMaps_Section {
+        justify-content: center !important;
+    }
+
+    .cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Content {
+        height: 400px;
+        margin: 10px;
+    }
+
+    .cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Tabs {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Tabs .nav-pills {
+        flex-flow: row;
+        flex-wrap: wrap !important;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    .cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Tabs .nav-pills a {
+        font-size: 16px;
+        margin: 5px !important;
+    }
+
+    .cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after { 
+        font-size: 16px;
+    }
+    /* ============== End cngStationsMaps =============== */
+    /* ============== Start ourAdvantages =============== */
+    .ourAdvantages .ourAdvantagesSlider .ourAvantagesImg img {
+        width: 270px;
+        height: 270px;
+    }
+
+    .ourAdvantages .ourAdvantagesSlider .ourAvantagesArticle {
+        padding: 8px 30px 0;
+    } 
+    /* ============== End ourAdvantages =============== */
+    /* ============== Start whyOurClientsChooseUs =============== */
+    .whyOurClientsChooseUs {
+        padding: 50px 0;
+    }
+
+    .whyOurClientsChooseUs .whyOurClientsChooseUsImg {
+        margin-top: 40px;
+    }
+    
+    .whyOurClientsChooseUs .whyOurClientsChooseUsImg img {
+        height: 400px;
+        width: 100%;
+    }
+    /* ============== End whyOurClientsChooseUs =============== */
+    /* ################### End cng_stations Page ################### */
+
+
+    /* ################### End call_us Page ################### */
+    /* ============== Start callUsDetails =============== */
+    .callUsDetails {
+        padding: 50px 0;
+    }
+
+    .callUsDetails .callUsData {
+        flex-flow: column-reverse !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+    }
+
+    .callUsDetails .callUsInfo {
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    .callUsDetails .callUsInfo .callUsInfoContent {
+        padding: 20px 0;
+    }
+
+    .callUsDetails .callUsInfo .callUsInfoContent:last-child {
+        padding-bottom: 0;
+    }
+
+    .callUsDetails .callUsInfo .callUsInfoContent div span {
+        font-size: 18px;
+    }
+
+    .callUsDetails .callUsImg {
+        padding: 0;
+    }
+
+    .callUsDetails .callUsImg img {
+        height: 320px;
+    } 
+    /* ============== End callUsDetails =============== */
+    /* ################### End call_us Page ################### */
+}
+
+
+/* ################ Small devices (landscape phones, less than 768px) ################ */
+@media (max-width: 767.98px) {
+    /* ################### Start Global ################### */
+    /* ============== Start pageHeader =============== */
+    .pageHeader h2 {
+        font-size: 35px;
+    }
+    /* ============== End pageHeader =============== */
+    /* ============== Start InquiriesComplaints =============== */
+    .InquiriesComplaints {
+        padding: 30px 0;
+    }
+
+    .InquiriesComplaints .InquiriesComplaintsContent i {
+        font-size: 30px;
+    }
+
+    .InquiriesComplaints .InquiriesComplaintsContent h2 {
+        font-size: 20px;
+    }
+
+    .InquiriesComplaints .InquiriesComplaintsContent p {
+        font-size: 16px;
+    }
+
+    .InquiriesComplaints .InquiriesComplaintsBtns {
+        padding: 30px 0 15px;
+    }
+
+    .InquiriesComplaints .InquiriesComplaintsBtns a {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+    /* ============== End InquiriesComplaints =============== */
+    /* ################### End Global ################### */
+
+
+    /* ################### Start index Page ################### */
+    /* ============== Start main =============== */
+    /* ------ main tools ------ */
+    main .mainTools ul li {
+        width: 220px !important;
+        height: 40px !important;
+    }
+
+    main .mainTools ul li i {
+        width: 50px;
+        height: 50px;
+        font-size: 17px;
+        cursor: pointer;
+    }
+    /* ============== Start searchModal, addressModal,telephoneModal =============== */
+    .searchModal .modal-header,
+    .addressModal .modal-header,
+    .telephoneModal .modal-header,
+    .calculatorModal .modal-header {
+        border: none;
+        padding: 25px 16px 20px;
+    }
+
+    .searchModal .modal-header .close,
+    .addressModal .modal-header .close,
+    .telephoneModal .modal-header .close {
+        background: #ed3239;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        outline: none;
+        margin-left: 0px;
+    }
+
+    .searchModal .modal-header .close span,
+    .addressModal .modal-header .close span,
+    .telephoneModal .modal-header .close span {
+        color: #fff;
+        border-radius: 50%;
+    }
+
+    .searchModal .modal-header .close span i,
+    .addressModal .modal-header .close span i,
+    .telephoneModal .modal-header .close span i {
+        font-size: 20px;
+    }
+
+    .searchModal .modal-body,
+    .addressModal .modal-body,
+    .telephoneModal .modal-body,
+    .calculatorModal .modal-body {
+        padding: 10px;
+    }
+
+    .searchModal .modal-body .bodyContent,
+    .addressModal .modal-body .bodyContent,
+    .telephoneModal .modal-body .bodyContent,
+    .calculatorModal .modal-body .bodyContent {
+        border: 3px solid #16acaa;
+        border-radius: 10px;
+        padding: 15px 10px;
+    }
+
+    .searchModal .modal-body .bodyContent h2,
+    .addressModal .modal-body .bodyContent h2,
+    .telephoneModal .modal-body .bodyContent h2,
+    .calculatorModal .modal-body .bodyContent .headerBody h2 {
+        color: #ed3239;
+        font-size: 25px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .calculatorModal .modal-body .bodyContent .headerBody {
+        padding-bottom: 0px;
+    }
+
+    .calculatorModal .modal-body .bodyContent .headerBody h2::after {
+        height: 0;
+    }
+
+    .searchModal .modal-body .bodyContent input {
+        margin: 0;
+        color: #ed3239;
+        font-size: 18px;
+        outline-color: #16acaa;
+        width: 90%;
+    }
+
+    .addressModal .modal-body .bodyContent p,
+    .telephoneModal .modal-body .bodyContent a {
+        margin: 0;
+        color: #16acaa;
+        font-size: 20px;
+    }
+
+    .calculatorModal .modal-body .bodyContent .fuelConsumption h2,
+    .calculatorModal .modal-body .bodyContent .gasoline92 h2,
+    .calculatorModal .modal-body .bodyContent .naturalGas h2 {
+        font-size: 20px;
+    }
+
+    .calculatorModal .modal-body .bodyContent .fuelConsumption input,
+    .calculatorModal .modal-body .bodyContent .gasoline92 input,
+    .calculatorModal .modal-body .bodyContent .naturalGas input {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .calculatorModal .modal-body .bodyContent .calcResult {
+        flex-wrap: wrap;
+    }
+
+    .calculatorModal .modal-body .bodyContent .calcResult .resultSec {
+        padding: 10px;
+        border-radius: 5px;
+        flex-wrap: wrap;
+        justify-content: space-around !important;
+        align-items: center ;
+    }
+
+    .calculatorModal .modal-body .bodyContent .calcResult .resultSec input {
+        width: 60px !important;
+    }
+
+    .calculatorModal .modal-body .bodyContent .calcResult .resultSec .saving h2 {
+        font-size: 20px;
+    }
+
+    .calculatorModal .modal-body .bodyContent .calcResult .resultSec .monthlySavings h2,
+    .calculatorModal .modal-body .bodyContent .calcResult .resultSec .annualSavings h2 {
+        font-size: 18px;
+    }
+    /* ============== End searchModal, addressModal,telephoneModal =============== */
+    /* ============== End Main =============== */
+    /* ============== Start mainBranches =============== */
+    .mainBranches .totalMainBranches .branchSection {
+        padding: 10px 15px;
+    }
+
+    .mainBranches .totalMainBranches {
+        padding: 10px 0;
+        flex-wrap: wrap;
+    }
+
+    .mainBranches .totalMainBranches .branchSection .branchImg {
+        height: 60px;
+        width: 60px;
+    }
+
+    .mainBranches .totalMainBranches .branchSection h2 {
+        font-size: 18px;
+    }
+
+    .mainBranches .totalMainBranches .branchSection p {
+        font-size: 16px;
+        padding: 0;
+    }
+    /* ============== End mainBranches =============== */
+    /* ============== Start sliderAboutCompany =============== */
+    .sliderAboutCompany {
+        padding: 80px 0;
+    }
+
+    .sliderAboutCompany .backCurve {
+        width: 290px;
+        top: 45%;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection {
+        flex-flow: column;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .slick-dots {
+        top: -14% !important;
+    }
+
+    .sliderAboutCompany .paginator-center .buttonNextPrev i {
+        padding: 8px 20px;
+    } 
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData p {
+        font-size: 18px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderImage {
+        height: 230px !important;
+        width: 350px;
+        margin-top: 10%;
+    }
+    /* ============== End sliderAboutCompany =============== */
+    /* ============== Start gasOffers =============== */
+    .gasOffers {
+        padding: 40px 0;
+    }
+
+    .gasOffers .totalGasOffers .gasOffersImg img {
+        width: 100%;
+        height: 90%;
+    }
+
+    .gasOffers .totalGasOffers .gasOffersImg img:hover {
+        transform: none;
+    }
+    /* ============== End gasOffers =============== */
+    /* ============== Start ourMaps =============== */
+    .ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills {
+        margin: 0;
+    }
+    /* ============== End ourMaps =============== */
+    /* ============== Start latestNews =============== */
+    .latestNews .latestNewsSlider .latestNewsSection {
+        margin: 0 50px;
+    }
+
+    .latestNews .latestNewsSlider .slick-next {
+        margin-top:  20px;
+    }
+
+    .latestNews .latestNewsSlider .slick-prev {
+        margin-top: 20px;
+    }
+    /* ============== End latestNews =============== */
+    /* ============== Start ourPartners =============== */
+    .ourPartners {
+        padding: 50px 0;
+    }
+
+    .ourPartners .ourPartnersLinks a {
+        width: 90px;
+        height: 90px;
+    }
+
+    .ourPartners .ourPartnersLinks a:hover {
+        transform: scale(1.3,1.3);
+    }
+    /* ============== End ourPartners =============== */
+    /* ################### End index Page ################### */
+
+
+    /* ################### Start CNG Mobile Page ################### */
+    /* ============== Start aboutCngMobile =============== */
+    .aboutCngMobile .imgVideoContainer {
+        padding: 10px 0 0px;
+        margin: 0;
+    }
+
+    .aboutCngMobile .imgVideoContainer img {
+        width: 100%;
+        height: 100%;
+    }
+    /* ============== End aboutCngMobile =============== */
+    /* ============== Start transmissionMechanism =============== */
+    .transmissionMechanism {
+        padding: 60px 0 120px;
+    }
+    /* ============== End transmissionMechanism =============== */
+    /* ============== Start GallaryWithVideo =============== */
+    .GallaryWithVideo {
+        padding: 0 0 50px;
+        position: relative;
+    }
+
+    .GallaryWithVideo .GallarySlider {
+        margin-top: -110px;
+    }
+
+    .GallaryWithVideo .GallarySlider .slick-next{
+        right: -20px;
+        margin-top: 50px;
+    }
+
+    .GallaryWithVideo .GallarySlider .slick-prev {
+        left: -20px;
+        margin-top: 50px;
+    }
+
+    .GallaryWithVideo .GallarySlider {
+        padding: 15px 20px;
+    } 
+
+    .GallaryWithVideo .GallarySlider img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .GallaryWithVideo .imgVideoContainer {
+        padding: 0;
+    }
+    /* ============== End GallaryWithVideo =============== */
+    /* ################### End CNG Mobile Page ################### */
+
+
+    /* ################### Start jobs Page ################### */
+    /* ============== Start jobsDetails =============== */
+    .jobsDetails .jobsDetailsHeader {
+        font-size: 20px;
+    }
+
+    .jobsDetails p {
+        font-size: 18px;
+        line-height: 30px;
+    } 
+
+    .jobsDetails form {
+        padding: 30px 0 0;
+    }
+
+    .jobsDetails .form-group {
+        padding: 0;
+    }
+    /* ============== End jobsDetails =============== */
+    /* ################### End jobs Page ################### */
+
+
+    /* ################### End jobs Page ################### */
+    /* ============== Start connectWithUsDetails =============== */
+    .connectWithUsDetails .connectWithUsDetailsHeader {
+        font-size: 20px;
+    }
+    /* ============== End connectWithUsDetails =============== */
+    /* ################### End jobs Page ################### */
+
+
+    /* ################### Start cylinders_Test Page ################### */
+    /* ============== Start cylindersTestDetails =============== */
+    .cylindersTestDetails {
+        padding: 40px 0 20px;
+    }
+
+    .cylindersTestDetails .cylindersTestImg {
+        margin-top: 20px;
+    }
+    /* ============== End cylindersTestDetails =============== */
+    /* ============== Start cylindersTestGallary =============== */
+    .cylindersTestGallary {
+        padding: 20px 0;
+    }
+
+    .cylindersTestGallary .allGallaryImages {
+        justify-content: center;
+    }
+
+    .cylindersTestGallary .allGallaryImages .firstSectionTop,
+    .cylindersTestGallary .allGallaryImages .secondSectionTop,
+    .cylindersTestGallary .allGallaryImages .thirdSectionTop {
+        height: 570px !important;
+    }
+
+    .cylindersTestGallary .allGallaryImages .firstSectionTop,
+    .cylindersTestGallary .allGallaryImages .secondSectionTop,
+    .cylindersTestGallary .allGallaryImages .thirdSectionTop,
+    .cylindersTestGallary .allGallaryImages .firstSectionBottom,
+    .cylindersTestGallary .allGallaryImages .secondSectionBottom {
+        padding: 5px 0 !important;
+    }
+
+    .cylindersTestGallary .allGallaryImages .secondSectionTop div {
+        height: 275px !important;
+    }
+
+    .cylindersTestGallary .allGallaryImages .secondSectionTop div img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .cylindersTestGallary .allGallaryImages .thirdSectionTop {
+        height: 320px;
+    }
+    /* ============== End cylindersTestGallary =============== */
+    /* ============== Start certificateSection =============== */
+    .certificateSection {
+        padding: 20px 0 30px;
+    }
+
+    .certificateSection .certificateSlider {
+        padding-top: 0px;
+    }
+
+    .certificateSection .certificateSlider .itemSection {
+        padding: 40px;
+    }
+
+    .certificateSection .certificateSlider .itemSection.slick-center img {
+        transform: scale(1.2,1.2);
+    } 
+    /* ============== End certificateSection =============== */
+    /* ################### End cylinders_Test Page ################### */
+
+
+    /* ################### Start news Page ################### */
+    /* ============== Start newestNews & oldNews & oldestNews =============== */
+    .allNewsInPage {
+        padding: 30px 0;
+    }
+
+    .newestNews,
+    .oldNews,
+    .oldestNews {
+        padding: 20px 0;
+    }
+    /* ============== End newestNews & oldNews & oldestNews =============== */
+    /* ################### End news Page ################### */
+
+
+    /* ################### Start Error Page ################### */
+    /* ============== Start errorPageMessage =============== */
+    .errorPageMessage {
+        padding: 40px 0;
+    }
+
+    .errorPageMessage .errorContent p {
+        font-size: 23px;
+    }
+    /* ============== End errorPageMessage =============== */
+    /* ################### End Error Page ################### */
+
+
+    /* ################### Start hsse Page ################### */
+    /* ============== Start aboutHsse =============== */
+    .aboutHsse {
+        padding: 40px 0;
+    }
+
+    .aboutHsse .aboutHsseImg img {
+        height: 300px;
+    }
+    /* ============== End aboutHsse =============== */
+    /* ============== Start safetyConditions =============== */
+    .safetyConditions .conditionSections p {
+        font-size: 20px;
+        padding: 0 15px;
+    }
+
+    .safetyConditions .conditionSections span {
+        font-size: 20px;
+    }
+
+    .safetyConditions .safetyConditionsImg {
+        margin-top: 20px;
+    }
+
+    .safetyConditions .safetyConditionsImg img {
+        height: 300px;
+    }
+    /* ============== End safetyConditions =============== */
+    /* ################### End hsse Page ################### */
+
+
+    /* ################### Start briefAboutCompany Page ################### */
+    /* ============== Start aboutOurCompany =============== */
+    @keyframes smallImgAnimation {
+        0% {
+            transform: translate(30px,20px);
+        }
+        100% {
+            transform: translate(0px,0px);
+        }
+    }
+    /* ============== End aboutOurCompany =============== */
+    /* ============== Start ourValues =============== */
+    .ourValues {
+        padding: 50px 0 70px;
+    }
+
+    .ourValues .ourAllValues {
+        justify-content: center !important;
+    }
+
+    .ourValues .ourAllValues .valueSection {
+        height: 390px;
+        width: 320px !important;
+        margin-bottom: 30px;
+    }
+
+    .ourValues .ourValuesHeader h2::after {
+        left: 47%;
+    }
+    /* ============== End ourValues =============== */
+    /* ################### End briefAboutCompany Page ################### */
+
+
+    /* ################### Start aboutVehiclesConverting Page ################### */
+    /* ============== Start aboutVehiclesConverting =============== */
+    .aboutVehiclesConverting {
+        padding: 40px 0 30px;
+    }
+
+    .aboutVehiclesConverting .aboutVehiclesConvertingImgVideo {
+        margin-top: 20px;
+    }
+
+    .aboutVehiclesConverting .aboutVehiclesConvertingImgVideo .playIconVideo {
+        height: 40px;
+        width: 40px;
+    }
+    /* ============== End aboutVehiclesConverting =============== */
+    /* ============== Start BenefitsConvertingVehicles =============== */
+    .BenefitsConvertingVehicles .benefitSections p {
+        font-size: 20px;
+        padding: 0 15px;
+    }
+
+    .BenefitsConvertingVehicles .benefitSections span {
+        font-size: 20px;
+    }
+
+    .BenefitsConvertingVehicles .BenefitsConvertingVehiclesImg {
+        margin-top: 20px;
+    }
+
+    .BenefitsConvertingVehicles .BenefitsConvertingVehiclesImg img {
+        height: 300px;
+    }
+    /* ============== End BenefitsConvertingVehicles =============== */
+    /* ################### End aboutVehiclesConverting Page ################### */
+
+
+    /* ################### Start briefAboutCompany Page ################### */
+    .aboutOurCompany {
+        padding: 40px 0 20px;
+    }
+    /* ################### End briefAboutCompany Page ################### */
+
+    
+    /* ################### Start cng_stations Page ################### */
+    /* ============== Start aboutCngStations =============== */
+    .aboutCngStations {
+        padding: 50px 0 0;
+    }
+    /* ============== End aboutVehiclesConverting =============== */
+    /* ============== Start cngStationsMaps =============== */
+    .cngStationsMaps .cngStationsMapsHeader {
+        margin-bottom: 10px;
+    }
+
+    .cngStationsMaps .cngStationsMaps_Section {
+        justify-content: center !important;
+    }
+
+    .cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Content {
+        height: 400px;
+        margin: 10px;
+    }
+
+    .cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Tabs {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Tabs .nav-pills {
+        flex-flow: row;
+        flex-wrap: wrap !important;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    .cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Tabs .nav-pills a {
+        font-size: 16px;
+        margin: 5px !important;
+    }
+
+    .cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after { 
+        font-size: 16px;
+    }
+    /* ============== End cngStationsMaps =============== */
+    /* ============== Start ourAdvantages =============== */
+    .ourAdvantages .ourAdvantagesSlider {
+        padding: 0px;
+    } 
+
+    .ourAdvantages .ourAdvantagesSlider .ourAvantagesImg img {
+        width: 270px;
+        height: 270px;
+    }
+
+    .ourAdvantages .ourAdvantagesSlider .ourAvantagesArticle {
+        text-align: center;
+        padding: 10px;
+    } 
+    /* ============== End ourAdvantages =============== */
+    /* ============== Start whyOurClientsChooseUs =============== */
+    .whyOurClientsChooseUs .chooseSections p {
+        font-size: 20px;
+        padding: 0 15px;
+    }
+
+    .whyOurClientsChooseUs .chooseSections span {
+        font-size: 20px;
+    }
+
+    .whyOurClientsChooseUs .whyOurClientsChooseUsImg {
+        margin-top: 20px;
+    }
+
+    .whyOurClientsChooseUs .whyOurClientsChooseUsImg img {
+        height: 300px;
+    }
+    /* ============== End whyOurClientsChooseUs =============== */
+    /* ################### End cng_stations Page ################### */
+
+    
+    /* ################### End call_us Page ################### */
+    /* ============== Start callUsDetails =============== */
+    .callUsDetails {
+        padding: 30px 0;
+    }
+    /* ============== End callUsDetails =============== */
+    /* ################### End call_us Page ################### */
+}
+
+/* ################ Extra small devices (portrait phones, less than 576px) ################ */
+@media (max-width: 575.98px) {
+    /* ################### Start Global ################### */
+    /* ============== Start Navbar =============== */
+    .navbar .navbar-toggler {
+        margin: 0;
+    }
+    /* ============== End Navbar =============== */
+    /* ============== Start go_up =============== */
+    .go_up {
+        right: 20px;
+        top: 90%;
+    }
+    /* ============== End go_up =============== */ 
+    /* ============== Start pageHeader =============== */
+    .pageHeader h2 {
+        font-size: 30px;
+    }
+    /* ============== End pageHeader =============== */
+    /* ################### End Global ################### */
+
+
+    /* ################### Start index Page ################### */
+    /* ============== Start Main =============== */
+    main .whoWeLink img {
+        width: 35px;
+        height: 35px;
+    }
+
+    main .scrollMouseIcon {
+        width: 20px;
+        height: 50px;
+    }
+    /* ============== End Main =============== */
+
+    /* ============== Start searchModal, addressModal,telephoneModal =============== */
+    .calculatorModal .modal-body .bodyContent .calcResult .calcBtnSec .calcBtn {
+        padding: 15px 10px;
+        margin-bottom: 10px;
+    }
+    /* ============== End searchModal, addressModal,telephoneModal =============== */
+    /* ============== Start mainBranches =============== */
+    .mainBranches .totalMainBranches {
+        padding: 15px 0;
+    }
+
+    .mainBranches .totalMainBranches .branchSection .branchImg {
+        height: 60px;
+        width: 60px;
+    }
+    /* ============== End mainBranches =============== */
+    /* ============== Start sliderAboutCompany =============== */
+    .sliderAboutCompany {
+        padding: 50px 0 80px;
+    }
+
+    .sliderAboutCompany .backCurve {
+        width: 290px;
+        height: 240px;
+        top: 52%;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection {
+        flex-flow: column;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .slick-dots {
+        top: -13.5% !important;
+        height: 35px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .slick-dots li {
+        width: 15px;
+        height: 15px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .slick-dots li button {
+        margin-top: 15px;
+    }
+
+    .sliderAboutCompany .paginator-center .buttonNextPrev {
+        margin-top: -15px;
+    }
+
+    .sliderAboutCompany .paginator-center .buttonNextPrev i {
+        font-size: 18px;
+        padding: 8px 10px;
+    } 
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData h2 {
+        font-size: 20px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData p {
+        font-size: 18px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderImage {
+        height: 240px !important;
+        width: 300px;
+        margin-top: 15%;
+    }
+    /* ============== End sliderAboutCompany =============== */
+    /* ============== Start ourServices =============== */
+    .ourServices .paginator-center .buttonNextPrev {
+        width: 75%;
+    }
+
+    .ourServices .paginator-center .buttonNextPrev i {
+        font-size: 20px;
+    }
+    /* ============== End ourServices =============== */
+    /* ============== Start .gasOffers =============== */
+    .gasOffers {
+        padding-bottom: 30px;
+    }
+
+    .gasOffers .gasOffersImg {
+        display: none;
+    }
+    /* ============== End .gasOffers =============== */
+    /* ============== Start transferOffers =============== */
+    .transferOffers .paginator-center .buttonNextPrev {
+        width: 75%;
+    }
+
+    .transferOffers .paginator-center .buttonNextPrev i {
+        font-size: 20px;
+    }
+    /* ============== End transferOffers =============== */
+    /* ============== Start ourMaps_control =============== */
+    .ourMaps_control .change_sections  {
+        padding: 0;
+        justify-content: center;
+        margin-top: -10px;
+    }   
+    /* ============== End ourMaps_control =============== */
+    /* ============== Start ourMaps =============== */
+    .ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills {
+        margin: 0;
+        justify-content: center;
+    }
+    /* ============== End ourMaps =============== */
+    /* ============== Start latestNews =============== */
+    .latestNews {
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .latestNews .latestNewsSlider .latestNewsSection {
+        margin: 0 20px;
+    }
+
+    .latestNews .paginator-center .buttonNextPrev {
+        width: 90%;
+        top: 52%;
+    }
+    /* ============== End latestNews =============== */
+    /* ============== Start ourPartners =============== */
+    .ourPartners {
+        padding: 30px 0;
+    }
+
+    .ourPartners .ourPartnersLinks {
+        flex-wrap: wrap;
+    }
+
+    .ourPartnersLinks a {
+        flex: 30%;
+    }
+
+    .ourPartnersLinks a img {
+        width: 90%;
+        height: 90%;
+    }
+    /* ============== End ourPartners =============== */
+    /* ################### End index Page ################### */
+
+
+    /* ################### Start CNG Mobile Page ################### */
+    /* ============== Start aboutCngMobile =============== */
+    .aboutCngMobile {
+        padding: 40px 0;
+    }
+
+    .aboutCngMobile .aboutCngMobileHeader {
+        font-size: 20px;
+    }
+
+    .aboutCngMobile p {
+        font-size: 17px;
+        line-height: 30px;
+        padding-top: 0px;
+    } 
+
+    .aboutCngMobile .imgVideoContainer {
+        padding: 10px 0 0px;
+        margin: 0;
+    }
+
+    .aboutCngMobile .imgVideoContainer img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .aboutCngMobile .imgVideoContainer .playIconVideo {
+        width: 40px;
+        height: 40px;
+    }
+    /* ============== End aboutCngMobile =============== */
+    /* ============== Start transmissionMechanism =============== */
+    .transmissionMechanism {
+        padding: 60px 0 120px;
+    }
+
+    .transmissionMechanism .transmissionMechanismHeader {
+        font-size: 20px;
+    }
+
+    .transmissionMechanism p {
+       font-size: 17px;
+       line-height: 30px;
+       padding-top: 0px;
+    }
+    /* ============== End transmissionMechanism =============== */
+    /* ============== Start GallaryWithVideo =============== */
+    .GallaryWithVideo {
+        padding: 0 0 30px;
+        position: relative;
+    }
+
+    .GallaryWithVideo .GallarySlider {
+        margin-top: -110px;
+    }
+
+    .GallaryWithVideo .GallarySlider .slick-next::before, 
+    .GallaryWithVideo .GallarySlider .slick-prev::before {
+        font-size: 15px;
+    } 
+
+    .GallaryWithVideo .GallarySlider .slick-next { 
+        right: -10px;
+        margin-top: 60px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .GallaryWithVideo .GallarySlider .slick-prev {
+        left: -10px;
+        margin-top: 60px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .GallaryWithVideo .GallarySlider {
+        padding: 0px;
+        width: 100%;
+    } 
+
+    .GallaryWithVideo .imgVideoContainer {
+        padding: 0;
+        margin-top: 20px;  
+    }
+
+    .GallaryWithVideo .imgVideoContainer .playIconVideo {
+        width: 40px;
+        height: 40px;
+    }
+    /* ============== End GallaryWithVideo =============== */
+    /* ################### End CNG Mobile Page ################### */
+
+
+    /* ################### Start OurParteners Page ################### */
+    /* ============== Start ourPartnersLogos =============== */
+    .ourPartnersLogos {
+        padding: 30px 0;
+    }
+
+    .ourPartnersLogos a:hover {
+        transform: scale(1,1);
+    }
+
+    .ourPartnersLogos a img {
+        width: 150px;
+        height: 150px;
+    }
+    /* ============== End ourPartnersLogos =============== */
+    /* ################### End OurParteners Page ################### */
+
+
+    /* ################### Start jobs Page ################### */
+    /* ============== Start jobsDetails =============== */
+    .jobsDetails {
+        padding: 50px 0;
+    }
+
+    .jobsDetails p {
+        font-size: 18px;
+        line-height: 30px;
+    } 
+
+    .jobsDetails form {
+        padding: 30px 0 0;
+    }
+
+    .jobsDetails form .btnContainer button {
+        padding: 10px 30px;
+    }
+
+    .jobsDetails form .btnContainer button:hover {
+        padding: 10px 50px;
+    }
+
+    .jobsDetails .formAllInputs {
+        padding: 0;
+    }
+
+    .jobsDetails .formAllInputs input,
+    .jobsDetails .formAllInputs select {
+        font-size: 15px;
+    }
+    /* ============== End jobsDetails =============== */
+    /* ################### End jobs Page ################### */
+
+
+
+    /* ################### Start connect_with_us Page ################### */
+    /* ============== Start connectWithUsDetails =============== */
+    .connectWithUsDetails {
+        padding: 40px 0 10px;
+    }
+
+    .connectWithUsDetails .connectWithUsData form {
+        padding: 30px 0px;
+    }
+
+    .connectWithUsDetails .connectWithUsData form .labelHeader {
+        font-size: 18px;
+    }
+
+    .connectWithUsDetails .connectWithUsData form .radioBtnsSec label {
+        margin: 0 20px;
+        font-size: 20px;
+    }
+
+    .connectWithUsDetails .connectWithUsData {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .connectWithUsDetails .connectWithUsData .connectImg {
+        padding: 30px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .connectWithUsDetails .connectWithUsData .connectImg img {
+        height: 370px;
+        width: 100%; 
+    }
+
+    .connectWithUsDetails .connectWithUsData .btnContainer button {
+        padding: 10px 30px;
+    }
+
+    .connectWithUsDetails .connectWithUsData .btnContainer button:hover {
+        padding: 10px 50px;
+    }
+    /* ============== End connectWithUsDetails =============== */
+    /* ################### End connect_with_us Page ################### */
+
+
+    /* ################### Start cylinders_Test Page ################### */
+    /* ============== Start cylindersTestDetails =============== */
+    .cylindersTestDetails .cylindersTestDetailsHeader {
+        font-size: 20px;
+    }
+
+    .cylindersTestDetails p {
+        font-size: 18px;
+    }
+
+    .cylindersTestDetails .cylindersTestImg {
+        margin-top: 20px;
+
+    }
+
+    .cylindersTestDetails .cylindersTestImg img {
+        height:250px;
+    }
+    /* ============== End cylindersTestDetails =============== */
+    /* ============== Start cylindersTestGallary =============== */
+    .cylindersTestGallary {
+        padding: 0;
+    }
+
+    .cylindersTestGallary .allGallaryImages {
+        justify-content: center;
+    }
+
+    .cylindersTestGallary .allGallaryImages .firstSectionTop,
+    .cylindersTestGallary .allGallaryImages .secondSectionTop,
+    .cylindersTestGallary .allGallaryImages .thirdSectionTop {
+        height: 570px !important;
+    }
+
+    .cylindersTestGallary .allGallaryImages .firstSectionTop,
+    .cylindersTestGallary .allGallaryImages .secondSectionTop,
+    .cylindersTestGallary .allGallaryImages .thirdSectionTop,
+    .cylindersTestGallary .allGallaryImages .firstSectionBottom,
+    .cylindersTestGallary .allGallaryImages .secondSectionBottom {
+        padding: 5px 0 !important;
+    }
+
+    .cylindersTestGallary .allGallaryImages .secondSectionTop div {
+        height: 275px !important;
+    }
+
+    .cylindersTestGallary .allGallaryImages .secondSectionTop div img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .cylindersTestGallary .allGallaryImages .thirdSectionTop {
+        height: 320px;
+    }
+    /* ============== End cylindersTestGallary =============== */
+    /* ============== Start certificateSection =============== */
+    .certificateSection {
+        padding: 30px 0;
+    }
+
+    .certificateSection .certificateSectionHeader {
+        font-size: 20px;
+    }
+
+    .certificateSection .certificateSlider {
+        padding-top: 0px;
+    }
+
+    .certificateSection .certificateSlider .itemSection {
+        padding: 20px;
+    }
+
+    .certificateSection .certificateSlider .itemSection.slick-center img {
+        transform: scale(1.2,1.2);
+    } 
+    /* ============== End certificateSection =============== */
+    /* ################### End cylinders_Test Page ################### */
+
+
+    /* ################### End news Page ################### */
+    /* ============== Start newestNews & oldNews & oldestNews =============== */
+    .allNewsInPage {
+        padding: 10px 0;
+    }
+
+    .newestNews .newestNewsSlider .sliderSection,
+    .oldNews .oldNewsSlider .sliderSection,
+    .oldestNews .oldestNewsSlider .sliderSection {
+        padding: 20px 15px 10px;
+        margin: 0;
+    }
+    /* ============== End newestNews & oldNews & oldestNews =============== */
+    /* ################### End news Page ################### */
+
+
+    /* ################### Start Error Page ################### */
+    /* ============== Start errorPageMessage =============== */
+    .errorPageMessage .errorContent p {
+        font-size: 20px;
+    }
+
+    .errorPageMessage .errorContent a:hover {
+        padding: 10px 60px;
+    }
+    /* ============== End errorPageMessage =============== */
+    /* ################### End Error Page ################### */
+
+
+    /* ################### Start hsse Page ################### */
+    /* ============== Start aboutHsse =============== */
+    .aboutHsse {
+        padding: 30px 0;
+    }
+
+    .aboutHsse .aboutHsseHeader {
+        font-size: 20px;
+    }
+
+    .aboutHsse p {
+        font-size: 18px;
+    } 
+
+    .aboutHsse .aboutHsseImg img {
+        height: 250px;
+    }
+    /* ============== End aboutHsse =============== */
+    /* ============== Start safetyConditions =============== */   
+    .safetyConditions .safetyConditionsHeader {
+        font-size: 20px;
+    }
+
+    .safetyConditions .conditionSections {
+        flex-flow: column;
+        align-items: flex-start !important;
+        padding: 0 10px;
+    }
+
+    .safetyConditions .conditionSections p {
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .safetyConditions .conditionSections span {
+        font-size: 18px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .safetyConditions .safetyConditionsImg {
+        margin-top: 10px;
+    }
+
+    .safetyConditions .safetyConditionsImg img {
+        height: 250px;
+    }
+    /* ============== End safetyConditions =============== */
+    /* ################### End hsse Page ################### */
+
+
+    /* ################### End briefAboutCompany Page ################### */
+    /* ============== Start aboutOurCompany =============== */
+    /* .aboutOurCompany {
+        padding: 40px 0 80px;
+    } */
+
+    .aboutOurCompany .aboutOurCompanyHeader {
+        font-size: 20px;
+    }
+
+    .aboutOurCompany .aboutOurCompanyContent p {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+    .aboutOurCompany .aboutOurCompanyImg {
+        padding: 20px 0 10px;
+    }
+
+    .aboutOurCompany .aboutOurCompanyImg img:nth-child(2){
+        left: auto;
+    }
+
+    @keyframes smallImgAnimation {
+        0% {
+            transform: translate(0px,-20px);
+        }
+        100% {
+            transform: translate(0px,0px);
+        }
+    }
+    /* ============== End aboutOurCompany =============== */
+    /* ============== Start ourVision =============== */
+    .ourVision {
+        padding: 50px 0;
+    }
+    
+    .ourVision .ourVisionTextAll .ourVisionHeader {
+        font-size: 20px;
+    }
+
+    .ourVision .ourVisionContent p {
+        font-size: 18px;
+    }
+    /* ============== End ourVision =============== */
+    /* ============== Start ourGoal =============== */
+    .ourGoal {
+        padding: 50px 0;
+    }
+
+    .ourGoal .ourGoalTextAll .ourGoalHeader {
+        font-size: 20px;
+    }
+
+    .ourGoal .ourGoalContent p {
+        font-size: 18px;
+    }
+    /* ============== End ourGoal =============== */
+    /* ============== Start ourValues =============== */
+    .ourValues .ourAllValues .valueSection {
+        height: 350px;
+    }
+
+    .ourValues .ourValuesHeader h2 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .ourValues .ourValuesHeader h2::after {
+        left: 46%;
+        text-align: center;
+    }
+
+    .ourValues .ourAllValues {
+        padding-top: 20px;
+    }
+
+    .ourValues .ourAllValues .valueSection .valueSectionContent p {
+        font-size: 18px;
+    }
+    /* ============== End ourValues =============== */
+    /* ################### End briefAboutCompany Page ################### */
+
+
+    /* ################### Start aboutVehiclesConverting Page ################### */
+    /* ============== Start aboutVehiclesConverting =============== */
+    .aboutVehiclesConverting .aboutVehiclesConvertingHeader {
+        font-size: 20px;
+    }
+
+    .aboutVehiclesConverting p {
+        font-size: 18px;
+    }
+
+    .aboutVehiclesConverting .aboutVehiclesConvertingImgVideo {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .aboutVehiclesConverting .aboutVehiclesConvertingImgVideo a {
+        padding: 0;
+    }
+
+    .aboutVehiclesConverting .aboutVehiclesConvertingImgVideo img {
+        height:250px;
+    }
+    /* ============== End aboutVehiclesConverting =============== */
+    /* ============== Start BenefitsConvertingVehicles =============== */   
+    .BenefitsConvertingVehicles .BenefitsConvertingVehiclesHeader {
+        font-size: 20px;
+    }
+
+    .BenefitsConvertingVehicles .benefitSections {
+        flex-flow: column;
+        align-items: flex-start !important;
+        padding: 0 10px;
+    }
+
+    .BenefitsConvertingVehicles .benefitSections p {
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .BenefitsConvertingVehicles .benefitSections span {
+        font-size: 18px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .BenefitsConvertingVehicles .BenefitsConvertingVehiclesImg {
+        margin-top: 10px;
+    }
+
+    .BenefitsConvertingVehicles .BenefitsConvertingVehiclesImg img {
+        height: 250px;
+    }
+    /* ============== End BenefitsConvertingVehicles =============== */
+    /* ################### End aboutVehiclesConverting Page ################### */
+
+
+    /* ################### Start cng_stations Page ################### */
+    /* ============== Start aboutCngStations =============== */
+    .aboutCngStations {
+        padding: 40px 0 0;
+    }
+
+    .aboutCngStations .aboutCngStationsHeader {
+        font-size: 20px;
+    }
+
+    .aboutCngStations .aboutCngStationsContent p {
+        font-size: 18px;
+    }
+    /* ============== End aboutVehiclesConverting =============== */
+    /* ============== Start cngStationsMaps =============== */
+    .cngStationsMaps .cngStationsMapsHeader {
+        font-size: 20px;
+    }
+    /* ============== End cngStationsMaps =============== */
+    /* ============== Start ourAdvantages =============== */
+    .ourAdvantages .ourAdvantagesHeader {
+        font-size: 20px;
+    }
+    /* ============== End ourAdvantages =============== */
+    /* ============== Start whyOurClientsChooseUs =============== */
+    .whyOurClientsChooseUs {
+        padding: 40px 0;
+    }
+
+    .whyOurClientsChooseUs .whyOurClientsChooseUsHeader {
+        font-size: 20px;
+    }
+
+    .whyOurClientsChooseUs .chooseSections {
+        flex-flow: column;
+        align-items: flex-start !important;
+        padding: 0 10px;
+    }
+
+    .whyOurClientsChooseUs .chooseSections p {
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .whyOurClientsChooseUs .chooseSections span {
+        font-size: 18px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .whyOurClientsChooseUs .whyOurClientsChooseUsImg {
+        margin-top: 20px;
+    }
+
+    .whyOurClientsChooseUs .whyOurClientsChooseUsImg img {
+        height: 250px;
+    }
+    /* ============== End whyOurClientsChooseUs =============== */
+    /* ################### End cng_stations Page ################### */
+}

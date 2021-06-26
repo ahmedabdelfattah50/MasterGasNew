@@ -1,0 +1,33 @@
+.newsCard .card-body{
+    background-color: #16acaa;
+    color: white;
+}
+.newsCard .card-body a{
+    color: white;
+}
+.newsCard .cardImg{
+    height: 175px;
+    background-repeat: no-repeat;background-size: cover;
+}
+.newsDetails h2{
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 30px;
+    padding: 0 10px 0 0;
+}
+.newsDetails h2:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+    right: 0;
+}
+.slick-next {
+    right: -50px;
+}
+.slick-prev {
+    left: -50px;
+}

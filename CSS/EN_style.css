@@ -1,0 +1,760 @@
+/* ################### Start Global ################### */
+/* ============== Start footer =============== */
+footer .footerSections .footerSection .footerLinks {
+    padding-left: 10px;
+}
+/* ============== End footer =============== */
+
+.NavbarMobile .navMenuMobile {
+    left: 0; 
+} 
+
+.NavbarMobile .navMenuMobile .closebtn {
+    left: 100%;
+}
+
+.navbar .navbar-nav .ourServicesDropDown .dropdown-menu {
+    left: -65%;
+    width: 250px;
+}
+
+.navbar .navbar-nav .ourPartinersDropDown .dropdown-menu {
+    left: -110%;
+    width: 250px;
+}
+
+.navbar .navbar-nav .dropdown.connectWithUsDropDown .dropdown-menu {
+    left: -35px;
+}
+
+.companyServicesMenu {
+    margin-left: 50px !important;
+}
+/* ################### End Global ################### */
+
+
+/* ################### Start index Page ################### */
+/* ============== Start Main =============== */
+main .whoWeLink {
+    width: 15%;
+}
+
+main .whoWeLink {
+    flex-flow: row-reverse;
+}
+
+main .whoWeLink img {
+    transform: scale(-1);
+}
+/* ============== Start mainTools =============== */
+main .mainTools {
+    right: -180px;
+}
+
+main .mainTools ul {
+    left: 0;
+}
+
+main .mainTools ul li {
+    width: 240px;
+    height: 50px;
+    margin: 5px 0;
+    right: 0;
+}
+
+
+main .mainTools ul li .liSectionItems {
+    padding-right: 5px;
+    -moz-border-radius-bottom-left: 30px;
+    -webkit-border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    -moz-border-radius-top-left: 30px;
+    -webkit-border-top-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+main .mainTools ul li i {
+    float: left;
+}
+
+main .mainTools ul li:hover {
+    right: 230px;
+    width: 400px;
+}
+/* ============== End mainTools =============== */
+/* ============== End Main =============== */
+/* ============== Start mainBranches =============== */
+.totalMainBranches {
+    direction: rtl;
+}
+/* ============== End mainBranches =============== */
+/* ============== Start sliderAboutCompany =============== */
+.sliderAboutCompany .backCurve { 
+    right: 0%;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData h2::after {
+    left: 0;
+    top: 100%;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-prev {
+    top: -23%;
+    left: 0.5%;
+    bottom: 150%;
+    z-index: 2;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-next {
+    top: -23%;
+    bottom: 150%;
+    left: 13%;
+    z-index: 2;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-dots { 
+    right: 0;
+}
+
+.sliderAboutCompany .paginator-center .buttonNextPrev {
+    flex-flow: row-reverse;
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection .sliderImage img {
+    transform: scaleX(-1);
+}
+/* ============== End sliderAboutCompany =============== */
+/* ============== Start ourServices =============== */
+.ourServices .ourServicesHeader {
+    padding: 0 0 0 10px;
+}
+
+.ourServices .ourServicesHeader:after {
+    left: 0;
+}
+
+.ourServices .paginator-center .buttonNextPrev {
+    flex-flow: row-reverse;
+}
+/* ============== End ourServices =============== */
+/* ============== Start gasOffers =============== */
+.gasOffers {
+    flex-flow: row-reverse;
+}
+
+.gasOffers .gasOffersImg {
+    right: 0;
+    transform: scaleX(-1);
+}
+
+.gasOffers .gasOffersArticle h2 {
+    padding-left: 10px;
+}
+
+.gasOffers .gasOffersArticle h2:after {
+    left: 0;
+}
+
+.gasOffers .gasOffersArticle p {
+    margin-left: 30px;
+}
+/* ============== End gasOffers =============== */
+/* ============== Start transferOffers =============== */
+.transferOffers .transferOffersHeader {
+    padding: 0 0 0 10px;
+}
+
+.transferOffers .transferOffersHeader:after {
+    left: 0;
+}
+
+.transferOffers .paginator-center .buttonNextPrev {
+    flex-flow: row-reverse;
+}
+/* ============== End transferOffers =============== */
+/* ============== Start ourMaps =============== */
+.ourMaps .ourMapsHeader {
+    padding: 0 0 0 10px;
+}
+
+.ourMaps .ourMapsHeader:after {
+    left: 0;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs {
+    padding-right: 0;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after {
+    right: 10px;
+    transform: scaleX(-1);
+}
+/* ============== Start ourMaps =============== */
+/* =============== Start the section control of ourMaps =============== */
+.ourMaps_control .change_sections i {
+    transform: scaleX(-1);
+}
+/* =============== End the section control of ourMaps =============== */
+/* =============== Start latestNews =============== */
+.latestNews {
+    background-image: url('../images/latestNewsBack_ltr.png');
+}
+.latestNews .latestNewsHeader {
+    padding: 0 0 0 10px; 
+}
+
+.latestNews .latestNewsHeader:after {
+    left: 0;
+}   
+
+.latestNews .paginator-center .buttonNextPrev {
+    flex-flow: row-reverse;
+}
+/* ============== End latestNews =============== */
+/* ============== Start ourPartners =============== */
+.ourPartners .ourPartnersHeader {
+    padding: 0 0 0 10px; 
+}
+
+.ourPartners .ourPartnersHeader:after {
+    left: 0;
+}
+/* ============== End ourPartners =============== */
+/* ################### End index Page ################### */
+
+
+/* ################### Start CNG Mobile Page ################### */
+/* ============== Start aboutCngMobile =============== */
+.aboutCngMobile .aboutCngMobileHeader {
+    padding: 0 0 0 10px;
+}
+
+.aboutCngMobile .aboutCngMobileHeader:after {
+    left: 0;
+}
+/* ============== End aboutCngMobile =============== */
+/* ============== Start transmissionMechanism =============== */
+.transmissionMechanism .transmissionMechanismHeader {
+    padding: 0 0 0 10px;
+}
+
+.transmissionMechanism .transmissionMechanismHeader:after {
+    left: 0;
+}
+/* ============== End transmissionMechanism =============== */
+/* ============== Start GallaryWithVideo =============== */
+.GallaryWithVideo .paginator-center .buttonNextPrev {
+    flex-flow: row-reverse;
+}
+/* ============== End GallaryWithVideo =============== */
+/* ################### End CNG Mobile Page ################### */
+
+
+/* ################### Start jobs Page ################### */
+/* ============== Start jobsDetails =============== */
+.jobsDetails .jobsDetailsHeader {
+    padding: 0 0 0 10px;
+}
+
+.jobsDetails .jobsDetailsHeader:after {
+    left: 0;
+}   
+/* ============== End jobsDetails =============== */
+/* ################### End jobs Page ################### */
+
+/* ################### Start connect_with_us Page ################### */
+/* ============== Start connectWithUsDetails =============== */
+.connectWithUsDetails .connectWithUsDetailsHeader {
+    padding: 0 0 0 10px;
+}
+
+.connectWithUsDetails .connectWithUsDetailsHeader:after {
+    left: 0;
+}   
+
+.connectWithUsDetails .connectWithUsData form .radioBtnsSec label {
+    padding-left: 20px;
+}
+
+.connectWithUsDetails .connectWithUsData form .radioBtnsSec .checkmark {
+    left: 0;
+}
+
+.connectWithUsDetails .connectWithUsData .connectImg img {
+    box-shadow: 30px 30px 0px #16acaa;
+}
+/* ============== End connectWithUsDetails =============== */
+/* ################### End connect_with_us Page ################### */
+
+
+/* ################### Start jobs Page ################### */
+/* ============== Start jobsDetails =============== */
+.jobsDetails .formAllInputs .selectSection::after,
+.jobsDetails .formAllInputs .uploadSection::after {
+    right: 5%;
+}
+/* ============== End jobsDetails =============== */
+/* ################### End jobs Page ################### */
+
+
+/* ################### Start cylinders_Test Page ################### */
+/* ============== Start cylindersTestDetails =============== */
+.cylindersTestDetails .cylindersTestDetailsHeader {
+    padding: 0 0 0 10px;
+}
+
+.cylindersTestDetails .cylindersTestDetailsHeader:after {
+    left: 0;
+}   
+/* ============== End cylindersTestDetails =============== */
+/* ============== Start certificateSection =============== */
+.certificateSection .certificateSectionHeader {
+    padding: 0 0 0 10px;
+}
+
+.certificateSection .certificateSectionHeader:after {
+    left: 0;
+} 
+/* ============== End certificateSection =============== */
+/* ################### End cylinders_Test Page ################### */
+
+
+/* ################### Start hsse Page ################### */
+/* ============== Start aboutHsse =============== */
+.aboutHsse .aboutHsseHeader {
+    padding: 0 0 0 10px;
+}
+
+.aboutHsse .aboutHsseHeader:after {
+    left: 0;
+}   
+/* ============== End aboutHsse =============== */
+/* ============== Start safetyConditions =============== */
+.safetyConditions .safetyConditionsHeader {
+    padding: 0 0 0 10px;
+}
+
+.safetyConditions .safetyConditionsHeader:after {
+    left: 0;
+}
+
+.safetyConditions .safetyConditionsContent {
+    padding: 20px 0 0 40px;
+}
+
+.safetyConditions .conditionSections span {
+    box-shadow: -5px 5px 0px #16acaa;
+}
+/* ============== End safetyConditions =============== */
+/* ################### Start hsse Page ################### */
+
+
+/* ################### Start briefAboutCompany Page ################### */
+/* ============== Start aboutOurCompany =============== */
+.aboutOurCompany .aboutOurCompanyHeader {
+    padding: 0 0 0 10px;
+}
+
+.aboutOurCompany .aboutOurCompanyHeader:after {
+    left: 0;
+}
+
+.aboutOurCompany .aboutOurCompanyImg img:nth-child(2) {
+    left: 10%;
+}
+
+@keyframes smallImgAnimation {
+    0% {
+        transform: translate(20px,-20px);
+    }
+    100% {
+        transform: translate(0px,20px);
+    }
+}
+/* ============== End aboutOurCompany =============== */
+/* ============== Start ourVision =============== */
+.ourVision .ourVisionTextAll .ourVisionHeader {
+    padding: 0 0 0 10px;
+}
+
+.ourVision .ourVisionTextAll .ourVisionHeader:after {
+    left: 0;
+}
+
+.ourVision .imageSide {
+    right: 0;
+}
+/* ============== End ourVision =============== */
+/* ============== Start ourGoal =============== */
+.ourGoal .ourGoalTextAll {
+    padding: 0 0 0 40px;
+}
+
+.ourGoal .ourGoalTextAll .ourGoalHeader {
+    padding: 0 0 0 10px;
+}
+
+.ourGoal .ourGoalTextAll .ourGoalHeader:after {
+    left: 0;
+}
+
+.ourGoal .imageSide {
+    left: 0;
+}
+/* ============== End ourGoal =============== */
+/* ################### End briefAboutCompany Page ################### */
+
+
+/* ################### Start vehicles_converting Page ################### */
+/* ============== Start aboutVehiclesConverting =============== */
+.aboutVehiclesConverting .aboutVehiclesConvertingHeader {
+    padding: 0 0 0 10px;
+}
+
+.aboutVehiclesConverting .aboutVehiclesConvertingHeader:after {
+    left: 0;
+}
+/* ============== End aboutVehiclesConverting =============== */
+/* ============== Start BenefitsConvertingVehicles =============== */
+.BenefitsConvertingVehicles .BenefitsConvertingVehiclesHeader {
+    padding: 0 0 0 10px;
+}
+
+.BenefitsConvertingVehicles .BenefitsConvertingVehiclesHeader:after {
+    left: 0;
+}
+
+.BenefitsConvertingVehicles .BenefitsConvertingVehiclesContent {
+    padding: 20px 0 0 40px;
+}
+
+.BenefitsConvertingVehicles .benefitSections span {
+    box-shadow: -5px 5px 0px #16acaa;
+}
+/* ============== End BenefitsConvertingVehicles =============== */
+/* ============== Start convertingMaps =============== */
+.convertingMaps .convertingMapsHeader {
+    padding: 0 0 0 10px;
+}
+
+.convertingMaps .convertingMapsHeader:after {
+    left: 0;
+}
+
+.convertingMaps .convertingMaps_Section .convertingMaps_Section_Tabs {
+    padding-right: 0;
+}
+
+.convertingMaps .convertingMaps_Section .convertingMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after {
+    right: 10px;
+    transform: scaleX(-1);
+}
+
+.convertingMaps .nav-pills {
+    margin-left: 0px;
+}
+/* ============== Start convertingMaps =============== */
+/* =============== Start the section control of convertingMaps =============== */
+.convertingMaps_control .change_sections i {
+    transform: scaleX(-1);
+}
+/* =============== End the section control of convertingMaps =============== */
+/* ################### End vehicles_converting Page ################### */
+
+
+/* ################### Start vehicles_converting Page ################### */
+/* ============== Start aboutCngStations =============== */
+.aboutCngStations .aboutCngStationsHeader {
+    padding: 0 0 0 10px;
+}
+
+.aboutCngStations .aboutCngStationsHeader:after {
+    left: 0;
+}
+/* ============== End aboutCngStations =============== */
+/* ============== Start cngStationsMaps =============== */
+.cngStationsMaps .cngStationsMapsHeader {
+   padding: 0 0 0 10px;
+}
+
+.cngStationsMaps .cngStationsMapsHeader:after {
+    left: 0;
+}
+
+.cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Tabs {
+    padding-right: 0;
+}
+
+.cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after {
+    right: 10px;
+    transform: scaleX(-1);
+}
+
+.cngStationsMaps .nav-pills {
+    margin-left: 0px;
+}
+/* ============== Start cngStationsMaps =============== */
+/* ============== Start ourAdvantages =============== */
+.ourAdvantages .ourAdvantagesHeader {
+    padding: 0 0 0 10px;
+}
+
+.ourAdvantages .ourAdvantagesHeader:after {
+    left: 0;
+}
+/* ============== End ourAdvantages =============== */
+/* ============== Start whyOurClientsChooseUs =============== */
+.whyOurClientsChooseUs .whyOurClientsChooseUsHeader {
+    padding: 0 0 0 10px;
+}
+
+.whyOurClientsChooseUs .whyOurClientsChooseUsHeader:after {
+    left: 0;
+}
+
+.whyOurClientsChooseUs .whyOurClientsChooseUsContent {
+    padding-right: 15px;
+}
+
+.whyOurClientsChooseUs .chooseSections span {
+    box-shadow: -5px 5px 0px #16acaa;
+}
+/* ============== End whyOurClientsChooseUs =============== */
+/* ################### End vehicles_converting Page ################### */
+
+
+/* ################### End call_us Page ################### */
+/* ============== Start callUsDetails =============== */
+/* .callUsDetails .callUsData {
+    direction: rtl !important;
+} */
+
+.callUsDetails .callUsData {
+    flex-flow: row-reverse;
+}
+/* ============== End callUsDetails =============== */
+/* ################### End call_us Page ################### */
+
+
+/* ################ Large devices (desktops, less than 1200px) ################ */
+@media (max-width: 1199.98px) {
+    /* ################### Start Global ################### */
+    .navbar .navbar-nav .ourServicesDropDown .dropdown-menu {
+        left: -72%;
+        width: 250px;
+    }
+    
+    .navbar .navbar-nav .ourPartinersDropDown .dropdown-menu {
+        left: -120%;
+        width: 250px;
+    }
+    /* ################### End Global ################### */
+    /* ################### Start index Page ################### */
+    /* ============== Start Main =============== */
+    main h1 {
+       font-size: 35px;
+    }
+
+    main .whoWeLink {
+        width: 19%;
+    }
+    /* ============== End Main =============== */
+    /* ============== Start mainBranches =============== */
+    .mainBranches .totalMainBranches .branchSection h2 {
+        font-size: 18px;
+    }
+
+    .mainBranches .totalMainBranches .branchSection p {
+        font-size: 16px;
+    }
+    /* ============== End mainBranches =============== */
+    /* ################### End index Page ################### */
+
+
+    /* ################### Start hsse Page ################### */
+    /* ============== Start safetyConditions =============== */
+    .safetyConditions .safetyConditionsContent {
+        padding: 20px 0 0 30px;
+    }
+    /* ============== End safetyConditions =============== */
+    /* ################### Start hsse Page ################### */
+    
+    
+    /* ################### Start aboutVehiclesConverting Page ################### */
+    /* ============== Start BenefitsConvertingVehicles =============== */
+    .BenefitsConvertingVehicles .BenefitsConvertingVehiclesContent {
+        padding: 20px 0 0 15px;
+    }
+    /* ============== End BenefitsConvertingVehicles =============== */
+    /* ################### Start aboutVehiclesConverting Page ################### */
+}
+
+
+/* ################ Medium devices (tablets, less than 992px) ################ */
+@media (max-width: 991.98px) {
+    /* ################### Start index Page ################### */
+    /* ============== Start Main =============== */
+    main .whoWeLink {
+        width: 25%;
+    }
+    /* ============== End Main =============== */
+    /* ============== Start sliderAboutCompany =============== */
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData {
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+
+    .sliderAboutCompany .backCurve {
+        top: 25%;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderImage {
+        margin-top: 0%;
+    }
+    /* ============== End sliderAboutCompany =============== */
+    /* ################### End index Page ################### */
+
+    
+    /* ################### Start briefAboutCompany Page ################### */
+    /* ============== Start aboutOurCompany =============== */
+    .aboutOurCompany .aboutOurCompanyImg img:nth-child(2) {
+        left: 27%;
+    }
+
+    @keyframes smallImgAnimation {
+        0% {
+            transform: translate(30px,20px);
+        }
+        100% {
+            transform: translate(60px,0px);
+        }
+    }
+    /* ============== End aboutOurCompany =============== */
+    /* ################### End briefAboutCompany Page ################### */
+}
+
+/* ################ Small devices (landscape phones, less than 768px) ################ */
+@media (max-width: 767.98px) {
+    /* ################### Start index Page ################### */
+    /* ============== Start Main =============== */
+    main h1 {
+        font-size: 25px;
+    }
+ 
+    main .whoWeLink {
+        width: 35%;
+    }
+    /* ============== Start mainTools =============== */
+    main .mainTools {
+        right: -200px;
+    }
+
+    main .mainTools ul li {
+        width: 60px;
+    }
+
+    main .mainTools ul li .liSectionItems {
+        height: 40px;
+    }
+
+    main .mainTools ul li i {
+        height: 40px;
+    }
+
+    main .mainTools ul li:hover {
+        right: 0px;
+        width: 60px;    
+    }
+    /* ============== End mainTools =============== */
+    /* ============== End Main =============== */
+    /* ============== Start sliderAboutCompany =============== */
+    .sliderAboutCompany .backCurve {
+        top: 50%;
+    }
+    /* ============== End sliderAboutCompany =============== */
+    /* ################### End index Page ################### */
+
+
+    /* ################### Start briefAboutCompany Page ################### */
+    /* ============== Start aboutOurCompany =============== */
+    .aboutOurCompany .aboutOurCompanyImg img:nth-child(2) {
+        left: 20%;
+    }
+    /* ============== End aboutOurCompany =============== */
+    /* ################### End briefAboutCompany Page ################### */
+}
+
+/* ################ Extra small devices (portrait phones, less than 576px) ################ */
+@media (max-width: 575.98px) {
+    /* ################### Start index Page ################### */
+    /* ============== Start Main =============== */
+    main h1 {
+        font-size: 25px;
+        padding: 0 30px;
+    }
+
+    main .whoWeLink {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main .whoWeLink .whoWeSection {
+        margin-right: 10px;
+    }
+    /* ============== End Main =============== */
+    /* ============== End sliderAboutCompany =============== */
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData {
+        padding-right: 0;
+        padding-bottom: 0px;
+    }
+    
+    .sliderAboutCompany .backCurve {
+        top: 55%;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .slick-dots {
+        top: -12% !important;
+        height: 35px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderImage {
+        margin-top: 10%;
+    }
+    /* ============== End sliderAboutCompany =============== */
+    /* ============== Start .gasOffers =============== */
+    .gasOffers {
+        margin-top: 530px;
+    }
+    /* ============== End .gasOffers =============== */
+    /* ################### End index Page ################### */
+
+
+    /* ################### Start briefAboutCompany Page ################### */
+    /* ============== Start aboutOurCompany =============== */
+    .aboutOurCompany .aboutOurCompanyImg img:nth-child(2) {
+        left: 10%;
+    }
+
+    @keyframes smallImgAnimation {
+        0% {
+            transform: translate(30px,20px);
+        }
+        100% {
+            transform: translate(40px,0px);
+        }
+    }
+    /* ============== End aboutOurCompany =============== */
+    /* ################### End briefAboutCompany Page ################### */
+
+
+    /* ################### Start connect_with_us Page ################### */
+    /* ============== Start connectWithUsDetails =============== */
+    .connectWithUsDetails .connectWithUsData .connectImg img {
+        box-shadow: 12px 12px 0px #16acaa;
+    }
+    /* ============== End connectWithUsDetails =============== */
+    /* ################### End connect_with_us Page ################### */
+}
